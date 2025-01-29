@@ -1,26 +1,28 @@
 // src/components/BeginnerBuilder.tsx
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { ollama, systemPrompt } from '@/lib/ollama';
-import StreamingText from './StreamingText';
-import ReactMarkdown from 'react-markdown';
+import { useState, useEffect, useRef } from "react";
+import { ollama, systemPrompt } from "@/lib/ollama";
+import StreamingText from "./StreamingText";
+import ReactMarkdown from "react-markdown";
 
 const BeginnerBuilder = () => {
-  const [messages, setMessages] = useState<{ role: 'user' | 'assistant' | 'system', content: string }[]>([]);
-  const [input, setInput] = useState('');
+  const [messages, setMessages] = useState<
+    { role: "user" | "assistant" | "system"; content: string }[]
+  >([]);
+  const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [currentStreamingText, setCurrentStreamingText] = useState('');
+  const [currentStreamingText, setCurrentStreamingText] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Initialize with system prompt
   useEffect(() => {
-    setMessages([{ role: 'system', content: systemPrompt }]);
+    setMessages([{ role: "system", content: systemPrompt }]);
   }, []);
 
   // Auto-scroll effect
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, currentStreamingText]);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -28,17 +30,20 @@ const BeginnerBuilder = () => {
     if (!input.trim() || isLoading) return;
 
     const userMessage = input.trim();
-    setInput('');
-    setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
+    setInput("");
+    setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
     setIsLoading(true);
-    setCurrentStreamingText('');
+    setCurrentStreamingText("");
 
     try {
-      const chatMessages = [...messages, { role: 'user', content: userMessage }];
-      let fullResponse = '';
+      const chatMessages = [
+        ...messages,
+        { role: "user", content: userMessage },
+      ];
+      let fullResponse = "";
 
       const response = await ollama.chat({
-        model: 'llama3.2',
+        model: "deepseek-r1:14b",
         messages: chatMessages,
         stream: true,
       });
@@ -48,19 +53,26 @@ const BeginnerBuilder = () => {
         setCurrentStreamingText(fullResponse);
       }
 
-      setMessages(prev => [...prev, { role: 'assistant', content: fullResponse }]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: fullResponse },
+      ]);
     } catch (error) {
-      console.error('Error:', error);
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: 'Sorry, I encountered an error. Please make sure Ollama is running locally with the llama3.2 model installed.' 
-      }]);
+      console.error("Error:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content:
+            "Sorry, I encountered an error. Please make sure Ollama is running locally with the llama3.2 model installed.",
+        },
+      ]);
     }
 
     setIsLoading(false);
   };
 
-  const displayMessages = messages.filter(msg => msg.role !== 'system');
+  const displayMessages = messages.filter((msg) => msg.role !== "system");
 
   return (
     <div className="flex flex-col h-[80vh] bg-gray-900">
@@ -69,26 +81,60 @@ const BeginnerBuilder = () => {
           <div
             key={index}
             className={`${
-              message.role === 'user' 
-                ? 'bg-gray-800 ml-12' 
-                : 'bg-gray-700 mr-12'
+              message.role === "user"
+                ? "bg-gray-800 ml-12"
+                : "bg-gray-700 mr-12"
             } p-4 rounded-lg shadow-md`}
           >
             <div className="prose prose-invert max-w-none">
-              {message.role === 'assistant' && message === displayMessages[displayMessages.length - 1] && isLoading ? (
+              {message.role === "assistant" &&
+              message === displayMessages[displayMessages.length - 1] &&
+              isLoading ? (
                 <StreamingText text={currentStreamingText} />
               ) : (
                 <ReactMarkdown
                   components={{
-                    h1: ({ children }) => <h1 className="text-2xl font-bold mb-4 text-white">{children}</h1>,
-                    h2: ({ children }) => <h2 className="text-xl font-bold mb-3 text-white">{children}</h2>,
-                    h3: ({ children }) => <h3 className="text-lg font-bold mb-2 text-white">{children}</h3>,
-                    p: ({ children }) => <p className="mb-4 text-gray-200">{children}</p>,
-                    ul: ({ children }) => <ul className="list-disc ml-6 mb-4 text-gray-200">{children}</ul>,
-                    ol: ({ children }) => <ol className="list-decimal ml-6 mb-4 text-gray-200">{children}</ol>,
-                    li: ({ children }) => <li className="mb-1 text-gray-200">{children}</li>,
-                    code: ({ children }) => <code className="bg-gray-800 px-1 py-0.5 rounded text-green-400">{children}</code>,
-                    pre: ({ children }) => <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4">{children}</pre>,
+                    h1: ({ children }) => (
+                      <h1 className="text-2xl font-bold mb-4 text-white">
+                        {children}
+                      </h1>
+                    ),
+                    h2: ({ children }) => (
+                      <h2 className="text-xl font-bold mb-3 text-white">
+                        {children}
+                      </h2>
+                    ),
+                    h3: ({ children }) => (
+                      <h3 className="text-lg font-bold mb-2 text-white">
+                        {children}
+                      </h3>
+                    ),
+                    p: ({ children }) => (
+                      <p className="mb-4 text-gray-200">{children}</p>
+                    ),
+                    ul: ({ children }) => (
+                      <ul className="list-disc ml-6 mb-4 text-gray-200">
+                        {children}
+                      </ul>
+                    ),
+                    ol: ({ children }) => (
+                      <ol className="list-decimal ml-6 mb-4 text-gray-200">
+                        {children}
+                      </ol>
+                    ),
+                    li: ({ children }) => (
+                      <li className="mb-1 text-gray-200">{children}</li>
+                    ),
+                    code: ({ children }) => (
+                      <code className="bg-gray-800 px-1 py-0.5 rounded text-green-400">
+                        {children}
+                      </code>
+                    ),
+                    pre: ({ children }) => (
+                      <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4">
+                        {children}
+                      </pre>
+                    ),
                   }}
                 >
                   {message.content}
