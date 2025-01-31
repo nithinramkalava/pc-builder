@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "pc_builder",
+      "username": "pc_builder_admin",
+      "password": "pc_builder",
+      "database": "pc_builder"
+    }
+  ]
+}
