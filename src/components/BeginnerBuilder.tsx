@@ -14,8 +14,13 @@ const BeginnerBuilder = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [currentStreamingText, setCurrentStreamingText] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Initialize with system prompt
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, [isLoading]);
+
   useEffect(() => {
     setMessages([{ role: "system", content: systemPrompt }]);
   }, []);
@@ -43,10 +48,11 @@ const BeginnerBuilder = () => {
       let fullResponse = "";
 
       const response = await ollama.chat({
-        model: "deepseek-r1:14b",
+        model: "qwen2.5:14b",
         messages: chatMessages,
         stream: true,
       });
+
 
       for await (const part of response) {
         fullResponse += part.message.content;
@@ -153,6 +159,7 @@ const BeginnerBuilder = () => {
       <form onSubmit={handleSubmit} className="p-4 border-t border-gray-700">
         <div className="flex gap-2">
           <input
+            ref={inputRef}
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
