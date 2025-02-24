@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 type Part = {
   id: number;
   name: string;
-  price: number;
+  price: number | string | null;
 };
 
 export type PartType =
@@ -21,7 +21,6 @@ export type PartType =
 
 type SelectedParts = { [K in PartType]?: Part };
 
-// Build order in preferred sequence.
 const partOrder: PartType[] = [
   "cpu",
   "motherboard",
@@ -41,16 +40,13 @@ const SkilledBuilder = () => {
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Convert stage key into a nicer label.
   const formatStageLabel = (stage: string) => {
     if (stage === "cpuCooler") return "CPU Cooler";
     return stage.charAt(0).toUpperCase() + stage.slice(1);
   };
 
-  // Allow the user to click on a previously completed stage to go back.
   const handleStageClick = (stageIndex: number) => {
     if (stageIndex < currentPartIndex) {
-      // Remove any selections for later stages.
       const newSelectedParts = { ...selectedParts };
       for (let i = stageIndex; i < partOrder.length; i++) {
         delete newSelectedParts[partOrder[i]];
@@ -63,8 +59,13 @@ const SkilledBuilder = () => {
   const currentPart = partOrder[currentPartIndex];
   const isComplete = currentPartIndex >= partOrder.length;
 
-  // When a part is selected, record the selection and move to the next stage.
   const handlePartSelect = (part: Part) => {
+    console.log(`[Client] Selected ${currentPart}:`, {
+      id: part.id,
+      name: part.name,
+      price: part.price,
+      priceType: typeof part.price
+    });
     setSelectedParts((prev) => ({
       ...prev,
       [currentPart]: part,
@@ -72,47 +73,103 @@ const SkilledBuilder = () => {
     setCurrentPartIndex((prev) => prev + 1);
   };
 
-  // Fetch parts data for the current stage from the API.
   useEffect(() => {
     const fetchParts = async () => {
       setLoadingParts(true);
       setError(null);
       try {
-        const res = await fetch(`/api/parts/${currentPart}`);
-        if (!res.ok) {
-          throw new Error("Failed to fetch parts");
+        const queryParams = new URLSearchParams();
+        
+        switch (currentPart) {
+          case "motherboard":
+            if (selectedParts.cpu?.id) queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            break;
+          case "cpuCooler":
+            if (selectedParts.cpu?.id) queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            break;
+          case "gpu":
+            if (selectedParts.motherboard?.id) queryParams.set("mobo_id", selectedParts.motherboard.id.toString());
+            break;
+          case "case":
+            if (selectedParts.gpu?.id) queryParams.set("gpu_id", selectedParts.gpu.id.toString());
+            break;
+          case "psu":
+            if (selectedParts.case?.id) {
+              queryParams.set("case_id", selectedParts.case.id.toString());
+              const estimatedWattage = 
+                (Number(selectedParts.cpu?.price) || 0) + 
+                (Number(selectedParts.gpu?.price) || 0) + 
+                100;
+              queryParams.set("required_wattage", estimatedWattage.toString());
+            }
+            break;
+          case "ram":
+            if (selectedParts.motherboard?.id && selectedParts.cpu?.id) {
+              queryParams.set("mobo_id", selectedParts.motherboard.id.toString());
+              queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            }
+            break;
         }
+
+        const url = `/api/parts/${currentPart}?${queryParams.toString()}`;
+        console.log(`[Client] Fetching parts for ${currentPart} from: ${url}`);
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("Failed to fetch parts");
         const data: Part[] = await res.json();
+        console.log(`[Client] Received ${currentPart} data:`, data.map(part => ({
+          id: part.id,
+          name: part.name,
+          price: part.price,
+          priceType: typeof part.price
+        })));
         setPartsData(data);
       } catch (err: unknown) {
-        const errorMessage =
-          err instanceof Error ? err.message : "An error occurred";
-        setError(errorMessage);
+        setError(err instanceof Error ? err.message : "An error occurred");
       } finally {
         setLoadingParts(false);
       }
     };
 
-    if (!isComplete) {
-      fetchParts();
-    }
-    // Reset search term when the stage changes.
+    if (!isComplete) fetchParts();
     setSearchTerm("");
-  }, [currentPart, isComplete]);
+  }, [currentPart, isComplete, selectedParts]);
 
-  // Filter parts in real time based on the search term.
   const filteredParts = partsData.filter((part) =>
-    part.name.toLowerCase().includes(searchTerm.toLowerCase())
+    part.name?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false
   );
 
-  const totalPrice = Object.values(selectedParts).reduce(
-    (sum, part) => sum + (part?.price || 0),
-    0
-  );
+  const calculateTotal = () => {
+    const parts = Object.values(selectedParts);
+    console.log("[Client] All selected parts for total calculation:", parts.map(part => ({
+      name: part?.name,
+      price: part?.price,
+      priceType: typeof part?.price
+    })));
+    let hasMissingPrice = false;
+    const total = parts.reduce((sum, part) => {
+      if (part) {
+        const price = Number(part.price); // Convert to number here
+        console.log(`[Client] Processing part: ${part.name}, raw price: ${part.price}, converted price: ${price}, type: ${typeof price}`);
+        if (!isNaN(price) && price !== null && price !== undefined) {
+          return sum + price; // Add the converted number
+        }
+        hasMissingPrice = true;
+      }
+      return sum;
+    }, 0);
+
+    console.log(`[Client] Calculated total before conversion: ${total}, hasMissingPrice: ${hasMissingPrice}`);
+    const formattedTotal = (total * 83).toLocaleString("en-IN");
+    return {
+      totalText: hasMissingPrice ? `${formattedTotal} + extra` : formattedTotal,
+      hasMissingPrice
+    };
+  };
+
+  const { totalText, hasMissingPrice } = calculateTotal();
 
   return (
     <div className="space-y-6">
-      {/* Progress Bar as Tab Navigation */}
       <div className="border-b flex">
         {partOrder.map((stage, index) => {
           const isCurrent = index === currentPartIndex;
@@ -129,14 +186,13 @@ const SkilledBuilder = () => {
               onClick={() => isCompleted && handleStageClick(index)}
             >
               <div className={tabClasses}>
-                {label} {isCompleted && <span>&#10003;</span>}
+                {label} {isCompleted && <span>✓</span>}
               </div>
             </div>
           );
         })}
       </div>
 
-      {/* Main Content Tag remains without extraneous titles */}
       {isComplete ? (
         <div className="space-y-4 mt-4">
           {Object.entries(selectedParts).map(([type, part]) => (
@@ -149,17 +205,25 @@ const SkilledBuilder = () => {
               </span>
               <div className="text-right">
                 <div>{part?.name}</div>
-                <div>₹{(part?.price * 83).toLocaleString("en-IN")}</div>
+                <div>
+                  {part && !isNaN(Number(part.price)) && part.price !== null && part.price !== undefined
+                    ? `₹${(Number(part.price) * 83).toLocaleString("en-IN")}`
+                    : "Price unavailable"}
+                </div>
               </div>
             </div>
           ))}
           <div className="text-xl font-bold text-right">
-            Total: ₹{(totalPrice * 83).toLocaleString("en-IN")}
+            Total: ₹{totalText}
+            {hasMissingPrice && (
+              <span className="text-sm font-normal ml-2 text-gray-600">
+                (Some parts missing price data)
+              </span>
+            )}
           </div>
         </div>
       ) : (
         <div className="space-y-4 mt-4">
-          {/* Realtime Search Bar */}
           <input
             type="text"
             placeholder={`Search ${formatStageLabel(currentPart)}...`}
@@ -180,7 +244,11 @@ const SkilledBuilder = () => {
                   className="p-4 border rounded text-left space-y-2 text-white bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
                 >
                   <div className="font-medium">{part.name}</div>
-                  <div>₹{(part.price * 83).toLocaleString("en-IN")}</div>
+                  <div>
+                    {part && !isNaN(Number(part.price)) && part.price !== null && part.price !== undefined
+                      ? `₹${(Number(part.price) * 83).toLocaleString("en-IN")}`
+                      : "Price unavailable"}
+                  </div>
                 </button>
               ))}
             </div>
