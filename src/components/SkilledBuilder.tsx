@@ -21,7 +21,7 @@ export type PartType =
 
 type SelectedParts = { [K in PartType]?: Part };
 
-// Build order is now in the preferred sequence.
+// Build order in preferred sequence.
 const partOrder: PartType[] = [
   "cpu",
   "motherboard",
@@ -72,7 +72,7 @@ const SkilledBuilder = () => {
     setCurrentPartIndex((prev) => prev + 1);
   };
 
-  // Fetch the parts for the current stage from the API.
+  // Fetch parts data for the current stage from the API.
   useEffect(() => {
     const fetchParts = async () => {
       setLoadingParts(true);
@@ -100,7 +100,7 @@ const SkilledBuilder = () => {
     setSearchTerm("");
   }, [currentPart, isComplete]);
 
-  // Filter parts based on the search term (case-insensitive).
+  // Filter parts in real time based on the search term.
   const filteredParts = partsData.filter((part) =>
     part.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -112,42 +112,33 @@ const SkilledBuilder = () => {
 
   return (
     <div className="space-y-6">
-      {/* Stage Navigation Bar */}
-      <div className="flex items-center space-x-2">
+      {/* Progress Bar as Tab Navigation */}
+      <div className="border-b flex">
         {partOrder.map((stage, index) => {
-          const isCompleted = index < currentPartIndex;
           const isCurrent = index === currentPartIndex;
+          const isCompleted = index < currentPartIndex;
           const label = formatStageLabel(stage);
-
-          let stageClasses = "px-3 py-1 rounded text-sm";
-          if (isCompleted) {
-            stageClasses += " bg-green-500 text-white cursor-pointer";
-          } else if (isCurrent) {
-            stageClasses += " bg-blue-500 text-white";
-          } else {
-            stageClasses += " bg-gray-300 text-gray-600";
-          }
-
+          const tabClasses = `cursor-pointer px-4 py-2 border-b-2 ${
+            isCurrent
+              ? "border-white font-semibold text-white"
+              : "border-transparent text-gray-500"
+          }`;
           return (
-            <div key={stage} className="flex items-center">
-              <div
-                className={stageClasses}
-                onClick={() => isCompleted && handleStageClick(index)}
-              >
+            <div
+              key={stage}
+              onClick={() => isCompleted && handleStageClick(index)}
+            >
+              <div className={tabClasses}>
                 {label} {isCompleted && <span>&#10003;</span>}
               </div>
-              {index < partOrder.length - 1 && (
-                <span className="text-gray-500">&#8594;</span>
-              )}
             </div>
           );
         })}
       </div>
 
-      {/* Main Content: Either Build Summary or the Part Selection Pane */}
+      {/* Main Content Tag remains without extraneous titles */}
       {isComplete ? (
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold">Your Build Summary</h2>
+        <div className="space-y-4 mt-4">
           {Object.entries(selectedParts).map(([type, part]) => (
             <div
               key={type}
@@ -158,9 +149,7 @@ const SkilledBuilder = () => {
               </span>
               <div className="text-right">
                 <div>{part?.name}</div>
-                <div className="text-black">
-                  ₹{(part?.price * 83).toLocaleString("en-IN")}
-                </div>
+                <div>₹{(part?.price * 83).toLocaleString("en-IN")}</div>
               </div>
             </div>
           ))}
@@ -169,10 +158,7 @@ const SkilledBuilder = () => {
           </div>
         </div>
       ) : (
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold">
-            Select your {formatStageLabel(currentPart)}
-          </h2>
+        <div className="space-y-4 mt-4">
           {/* Realtime Search Bar */}
           <input
             type="text"
@@ -194,9 +180,7 @@ const SkilledBuilder = () => {
                   className="p-4 border rounded text-left space-y-2 text-white bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
                 >
                   <div className="font-medium">{part.name}</div>
-                  <div className="text-white">
-                    ₹{(part.price * 83).toLocaleString("en-IN")}
-                  </div>
+                  <div>₹{(part.price * 83).toLocaleString("en-IN")}</div>
                 </button>
               ))}
             </div>
