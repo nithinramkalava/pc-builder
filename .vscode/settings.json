@@ -9,6 +9,16 @@
       "username": "pc_builder_admin",
       "password": "pc_builder",
       "database": "pc_builder"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "New Prod",
+      "username": "pc_builder_admin",
+      "database": "pc_builder_prod",
+      "password": "pc_builder"
     }
   ]
 }
