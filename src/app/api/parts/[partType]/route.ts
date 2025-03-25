@@ -117,9 +117,9 @@ export async function GET(
             if (gpuTdpMatch) gpuTdp = parseInt(gpuTdpMatch[0], 10);
           }
 
-          // Calculate total wattage with 40% headroom
+          // Calculate total wattage with 50% headroom
           const totalTdp = cpuTdp + gpuTdp;
-          const requiredWattage = Math.ceil(totalTdp * 1.4);
+          const requiredWattage = Math.ceil(totalTdp * 1.5);
 
           queryText = "SELECT * FROM get_compatible_psu($1, $2)";
           params = [requiredWattage, caseId];
