@@ -64,7 +64,7 @@ const SkilledBuilder = () => {
       id: part.id,
       name: part.name,
       price: part.price,
-      priceType: typeof part.price
+      priceType: typeof part.price,
     });
     setSelectedParts((prev) => ({
       ...prev,
@@ -75,98 +75,192 @@ const SkilledBuilder = () => {
 
   useEffect(() => {
     const fetchParts = async () => {
+      if (isComplete) return;
+
       setLoadingParts(true);
       setError(null);
       try {
         const queryParams = new URLSearchParams();
-        
+
         switch (currentPart) {
           case "motherboard":
-            if (selectedParts.cpu?.id) queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            if (selectedParts.cpu?.id)
+              queryParams.set("cpu_id", selectedParts.cpu.id.toString());
             break;
           case "cpuCooler":
-            if (selectedParts.cpu?.id) queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            if (selectedParts.cpu?.id)
+              queryParams.set("cpu_id", selectedParts.cpu.id.toString());
             break;
           case "gpu":
-            if (selectedParts.motherboard?.id) queryParams.set("mobo_id", selectedParts.motherboard.id.toString());
+            if (selectedParts.motherboard?.id)
+              queryParams.set(
+                "mobo_id",
+                selectedParts.motherboard.id.toString()
+              );
             break;
           case "case":
-            if (selectedParts.gpu?.id) queryParams.set("gpu_id", selectedParts.gpu.id.toString());
+            if (selectedParts.gpu?.id && selectedParts.motherboard?.id) {
+              queryParams.set("gpu_id", selectedParts.gpu.id.toString());
+              queryParams.set(
+                "mobo_id",
+                selectedParts.motherboard.id.toString()
+              );
+            }
             break;
           case "psu":
-            if (selectedParts.case?.id) {
+            if (
+              selectedParts.case?.id &&
+              selectedParts.cpu?.id &&
+              selectedParts.gpu?.id
+            ) {
               queryParams.set("case_id", selectedParts.case.id.toString());
-              const estimatedWattage = 
-                (Number(selectedParts.cpu?.price) || 0) + 
-                (Number(selectedParts.gpu?.price) || 0) + 
-                100;
-              queryParams.set("required_wattage", estimatedWattage.toString());
+              queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+              queryParams.set("gpu_id", selectedParts.gpu.id.toString());
             }
             break;
           case "ram":
             if (selectedParts.motherboard?.id && selectedParts.cpu?.id) {
-              queryParams.set("mobo_id", selectedParts.motherboard.id.toString());
+              queryParams.set(
+                "mobo_id",
+                selectedParts.motherboard.id.toString()
+              );
               queryParams.set("cpu_id", selectedParts.cpu.id.toString());
+            }
+            break;
+          case "storage":
+            if (selectedParts.motherboard?.id) {
+              queryParams.set(
+                "mobo_id",
+                selectedParts.motherboard.id.toString()
+              );
             }
             break;
         }
 
         const url = `/api/parts/${currentPart}?${queryParams.toString()}`;
         console.log(`[Client] Fetching parts for ${currentPart} from: ${url}`);
+
         const res = await fetch(url);
-        if (!res.ok) throw new Error("Failed to fetch parts");
-        const data: Part[] = await res.json();
-        console.log(`[Client] Received ${currentPart} data:`, data.map(part => ({
-          id: part.id,
-          name: part.name,
-          price: part.price,
-          priceType: typeof part.price
-        })));
+        const textResponse = await res.text(); // Get the raw response text first
+
+        if (!res.ok) {
+          console.error(`[Client] API Error response: ${textResponse}`);
+          throw new Error(
+            `Failed to fetch parts: ${res.status} ${res.statusText}`
+          );
+        }
+
+        // Try to parse the response as JSON
+        let data: Part[];
+        try {
+          data = JSON.parse(textResponse) as Part[];
+        } catch (parseError) {
+          console.error("[Client] Failed to parse JSON response:", parseError);
+          console.error("[Client] Raw response:", textResponse);
+          throw new Error("Invalid response from server");
+        }
+
+        console.log(
+          `[Client] Received ${currentPart} data (${data.length} items):`,
+          data.slice(0, 3).map((part) => ({
+            id: part.id,
+            name: part.name,
+            price: part.price,
+            priceType: typeof part.price,
+          }))
+        );
+
         setPartsData(data);
       } catch (err: unknown) {
-        setError(err instanceof Error ? err.message : "An error occurred");
+        console.error("[Client] Error fetching parts:", err);
+        setError(
+          err instanceof Error ? err.message : "An unknown error occurred"
+        );
       } finally {
         setLoadingParts(false);
       }
     };
 
-    if (!isComplete) fetchParts();
+    fetchParts();
     setSearchTerm("");
   }, [currentPart, isComplete, selectedParts]);
 
-  const filteredParts = partsData.filter((part) =>
-    part.name?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false
+  const filteredParts = partsData.filter(
+    (part) =>
+      part.name?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false
   );
 
   const calculateTotal = () => {
     const parts = Object.values(selectedParts);
-    console.log("[Client] All selected parts for total calculation:", parts.map(part => ({
-      name: part?.name,
-      price: part?.price,
-      priceType: typeof part?.price
-    })));
+    console.log(
+      "[Client] All selected parts for total calculation:",
+      parts.map((part) => ({
+        name: part?.name,
+        price: part?.price,
+        priceType: typeof part?.price,
+      }))
+    );
     let hasMissingPrice = false;
     const total = parts.reduce((sum, part) => {
       if (part) {
-        const price = Number(part.price); // Convert to number here
-        console.log(`[Client] Processing part: ${part.name}, raw price: ${part.price}, converted price: ${price}, type: ${typeof price}`);
-        if (!isNaN(price) && price !== null && price !== undefined) {
-          return sum + price; // Add the converted number
+        // Handle price conversion from string to number
+        let price: number = 0;
+        if (typeof part.price === "number") {
+          price = part.price;
+        } else if (typeof part.price === "string") {
+          // Extract numeric value from price string (e.g. "$212.10" -> 212.10)
+          const priceMatch = part.price.match(/(\d+(\.\d+)?)/);
+          if (priceMatch) {
+            price = parseFloat(priceMatch[0]);
+          } else {
+            hasMissingPrice = true;
+          }
+        } else {
+          hasMissingPrice = true;
         }
-        hasMissingPrice = true;
+
+        console.log(
+          `[Client] Processing part: ${part.name}, raw price: ${
+            part.price
+          }, converted price: ${price}, type: ${typeof price}`
+        );
+        return sum + price;
       }
       return sum;
     }, 0);
 
-    console.log(`[Client] Calculated total before conversion: ${total}, hasMissingPrice: ${hasMissingPrice}`);
+    console.log(
+      `[Client] Calculated total before conversion: ${total}, hasMissingPrice: ${hasMissingPrice}`
+    );
     const formattedTotal = (total * 83).toLocaleString("en-IN");
     return {
       totalText: hasMissingPrice ? `${formattedTotal} + extra` : formattedTotal,
-      hasMissingPrice
+      hasMissingPrice,
     };
   };
 
   const { totalText, hasMissingPrice } = calculateTotal();
+
+  const formatPrice = (price: number | string | null | undefined) => {
+    if (price === null || price === undefined) return "Price unavailable";
+
+    let numericPrice: number = 0;
+    if (typeof price === "number") {
+      numericPrice = price;
+    } else if (typeof price === "string") {
+      // Extract numeric value from price string (e.g. "$212.10" -> 212.10)
+      const priceMatch = price.match(/(\d+(\.\d+)?)/);
+      if (priceMatch) {
+        numericPrice = parseFloat(priceMatch[0]);
+      } else {
+        return "Price unavailable";
+      }
+    } else {
+      return "Price unavailable";
+    }
+
+    return `₹${(numericPrice * 83).toLocaleString("en-IN")}`;
+  };
 
   return (
     <div className="space-y-6">
@@ -205,11 +299,7 @@ const SkilledBuilder = () => {
               </span>
               <div className="text-right">
                 <div>{part?.name}</div>
-                <div>
-                  {part && !isNaN(Number(part.price)) && part.price !== null && part.price !== undefined
-                    ? `₹${(Number(part.price) * 83).toLocaleString("en-IN")}`
-                    : "Price unavailable"}
-                </div>
+                <div>{formatPrice(part?.price)}</div>
               </div>
             </div>
           ))}
@@ -235,6 +325,8 @@ const SkilledBuilder = () => {
             <div>Loading...</div>
           ) : error ? (
             <div className="text-red-500">Error: {error}</div>
+          ) : filteredParts.length === 0 ? (
+            <div>No {formatStageLabel(currentPart)} components found</div>
           ) : (
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {filteredParts.map((part) => (
@@ -244,11 +336,7 @@ const SkilledBuilder = () => {
                   className="p-4 border rounded text-left space-y-2 text-white bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
                 >
                   <div className="font-medium">{part.name}</div>
-                  <div>
-                    {part && !isNaN(Number(part.price)) && part.price !== null && part.price !== undefined
-                      ? `₹${(Number(part.price) * 83).toLocaleString("en-IN")}`
-                      : "Price unavailable"}
-                  </div>
+                  <div>{formatPrice(part.price)}</div>
                 </button>
               ))}
             </div>
