@@ -425,12 +425,22 @@ BEGIN
     END IF;
 
     RETURN QUERY
-    SELECT 
-        s.*
+    SELECT
+        s.id,
+        s.name,
+        s.price,
+        s.capacity,
+        s.price_per_gb,
+        s.type,
+        s.cache,
+        s.form_factor,
+        s.interface
     FROM ssd_specs s
     WHERE 
         (s.form_factor = 'M.2-2280' AND v_mobo_m2_slots IS NOT NULL)
         OR (s.interface LIKE '%SATA%' AND v_mobo_sata_ports IS NOT NULL)
     ORDER BY s.price_per_gb ASC NULLS LAST;
+
 END;
 $$ LANGUAGE plpgsql;
+

@@ -1,5 +1,5 @@
 // src/components/Navigation.tsx
-import Link from 'next/link';
+import Link from "next/link";
 
 const Navigation = () => {
   return (
@@ -14,6 +14,9 @@ const Navigation = () => {
           </Link>
           <Link href="/beginner" className="text-white hover:text-gray-300">
             Beginner Builder
+          </Link>
+          <Link href="/recommend" className="text-white hover:text-gray-300">
+            PC Requirements
           </Link>
         </div>
       </div>

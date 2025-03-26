@@ -1,0 +1,27 @@
+Create a New Component similar to beginner builder where the user will chat with our LLM from ollama but at the task is different here the goal is question user about various things such that we will be able to achieve
+this features
+User Requirements
+Budget: Total maximum price (e.g., ₹120000)
+Use Cases:
+Gaming (boolean + intensity 1-10)
+Video Editing (boolean + intensity 1-10)
+3D Rendering (boolean + intensity 1-10)
+Programming/Development (boolean + intensity 1-10)
+Office Work (boolean + intensity 1-10)
+Streaming (boolean + intensity 1-10)
+Technical Preferences
+Platform Preference: AMD/Intel for CPU
+Graphics Preference: NVIDIA/AMD/Intel
+Form Factor: Full tower/Mid tower/Mini ITX
+Aesthetics: RGB importance (1-10)
+Noise Level Preference: Silent/Balanced/Performance
+Upgrade Path Importance: (1-10)
+Storage Requirements: SSD capacity, HDD capacity
+Connectivity Requirements: Wifi, Bluetooth, USB ports
+Performance Priorities
+CPU Priority: (1-10)
+GPU Priority: (1-10)
+RAM Priority: (1-10)
+Storage Speed Priority: (1-10)
+
+and then output it in a json format. which is where we will intercept the llm message and display it to the user in a nice user interface 
