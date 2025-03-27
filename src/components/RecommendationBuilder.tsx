@@ -84,41 +84,6 @@ IMPORTANT GUIDELINES FOR CONVERSATION:
 
 Remember to keep your questions conversational and natural. Once you've gathered enough information, output the complete JSON object with all fields.`;
 
-interface RecommendationData {
-  budget: number;
-  useCases: {
-    gaming: { needed: boolean; intensity: number };
-    videoEditing: { needed: boolean; intensity: number };
-    rendering3D: { needed: boolean; intensity: number };
-    programming: { needed: boolean; intensity: number };
-    officeWork: { needed: boolean; intensity: number };
-    streaming: { needed: boolean; intensity: number };
-  };
-  technicalPreferences: {
-    cpuPlatform: string;
-    gpuPlatform: string;
-    formFactor: string;
-    rgbImportance: number;
-    noiseLevel: string;
-    upgradePathImportance: number;
-    storage: {
-      ssdCapacity: string;
-      hddCapacity: string;
-    };
-    connectivity: {
-      wifi: boolean;
-      bluetooth: boolean;
-      usbPorts: string;
-    };
-  };
-  performancePriorities: {
-    cpu: number;
-    gpu: number;
-    ram: number;
-    storageSpeed: number;
-  };
-}
-
 const RecommendationBuilder = () => {
   const [messages, setMessages] = useState<
     { role: "user" | "assistant" | "system"; content: string }[]
@@ -126,8 +91,6 @@ const RecommendationBuilder = () => {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [currentStreamingText, setCurrentStreamingText] = useState("");
-  const [recommendationData, setRecommendationData] =
-    useState<RecommendationData | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -144,31 +107,6 @@ const RecommendationBuilder = () => {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, currentStreamingText]);
-
-  // Extract JSON from assistant's message if present
-  useEffect(() => {
-    const assistantMessages = messages.filter(
-      (msg) => msg.role === "assistant"
-    );
-    if (assistantMessages.length > 0) {
-      const lastMessage =
-        assistantMessages[assistantMessages.length - 1].content;
-
-      try {
-        // Check if message contains JSON (starts with { and ends with })
-        if (lastMessage.includes("{") && lastMessage.includes("}")) {
-          const jsonMatch = lastMessage.match(/\{[\s\S]*\}/);
-          if (jsonMatch) {
-            const jsonString = jsonMatch[0];
-            const data = JSON.parse(jsonString);
-            setRecommendationData(data);
-          }
-        }
-      } catch (error) {
-        console.error("Error parsing JSON from response:", error);
-      }
-    }
-  }, [messages]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -316,17 +254,6 @@ const RecommendationBuilder = () => {
           </button>
         </div>
       </form>
-
-      {recommendationData && (
-        <div className="p-4 border-t border-gray-700 bg-gray-800">
-          <h3 className="text-lg font-bold mb-2 text-white">
-            Collected Recommendation Data:
-          </h3>
-          <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto text-green-400">
-            {JSON.stringify(recommendationData, null, 2)}
-          </pre>
-        </div>
-      )}
     </div>
   );
 };

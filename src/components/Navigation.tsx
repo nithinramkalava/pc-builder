@@ -16,7 +16,7 @@ const Navigation = () => {
             Beginner Builder
           </Link>
           <Link href="/recommend" className="text-white hover:text-gray-300">
-            PC Requirements
+             Reccomendation
           </Link>
         </div>
       </div>
