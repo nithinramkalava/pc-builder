@@ -1,0 +1,114 @@
+{
+  "components": {
+    "cpu": {
+      "name": "AMD Ryzen 5 7600 3.8 GHz 6-Core Processor",
+      "price": "$184.98",
+      "price_inr": "\u20b915415.00",
+      "details": {
+        "manufacturer": "AMD",
+        "core_count": 6,
+        "core_clock": "3.8 GHz",
+        "boost_clock": "5.1 GHz",
+        "rank": 182,
+        "ml_score": 219.56009755644328
+      }
+    },
+    "motherboard": {
+      "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+      "price": "$140.98",
+      "price_inr": "\u20b911748.33",
+      "details": {
+        "form_factor": "Mini ITX",
+        "chipset": "AMD A620",
+        "memory_type": "DDR5",
+        "rank": 138,
+        "ml_score": 332.7811873098641
+      }
+    },
+    "cooler": {
+      "name": "Alphacool Core Ocean T38 62.8 CFM Liquid CPU Cooler",
+      "price": "$56.00",
+      "price_inr": "\u20b94666.67",
+      "details": {
+        "type": "Air Cooled",
+        "noise_level": "0 - 34.3 dB",
+        "rank": 294,
+        "ml_score": 76.17081923927722
+      }
+    },
+    "gpu": {
+      "name": "MSI RTX 3060 Ventus 3X 12G OC GeForce RTX 3060 12GB 12 GB Video Card",
+      "price": "$299.99",
+      "price_inr": "\u20b924999.17",
+      "details": {
+        "chipset": "GeForce RTX 3060 12GB",
+        "memory": "12 GB",
+        "core_clock": "1320 MHz",
+        "rank": 188,
+        "ml_score": 912.1848421801413
+      }
+    },
+    "case": {
+      "name": "Cooler Master Q300L V2 MicroATX Mini Tower Case",
+      "price": "$54.99",
+      "price_inr": "\u20b94582.50",
+      "details": {
+        "type": "MicroATX Mini Tower",
+        "color": "Black",
+        "rank": 362,
+        "ml_score": 114.24658540673586
+      }
+    },
+    "psu": {
+      "name": "Apevia Galaxy 850 W 80+ Gold Certified Semi-modular ATX Power Supply",
+      "price": "$69.98",
+      "price_inr": "\u20b95831.67",
+      "details": {
+        "wattage": "850 W",
+        "efficiency": "80+ Gold",
+        "modular": null,
+        "rank": 105,
+        "ml_score": 179.07746292439606
+      }
+    },
+    "memory": {
+      "name": "TEAMGROUP T-Create Expert 48 GB (2 x 24 GB) DDR5-6400 CL32 Memory",
+      "price": "$139.99",
+      "price_inr": "\u20b911665.83",
+      "details": {
+        "speed": "DDR5-6400",
+        "modules": "2 x 24GB",
+        "rank": 103,
+        "ml_score": 184.83596966287578
+      }
+    },
+    "storage": {
+      "name": "Leven JM600",
+      "price": "54.99",
+      "price_inr": "\u20b94582.50",
+      "details": {
+        "capacity": "1000 GB",
+        "type": "SSD",
+        "interface": "M.2 SATA",
+        "rank": 9999,
+        "ml_score": 0
+      }
+    }
+  },
+  "selection_order": [
+    "cpu",
+    "motherboard",
+    "cooler",
+    "gpu",
+    "case",
+    "psu",
+    "memory",
+    "storage"
+  ],
+  "total_cost_usd": "$1001.90",
+  "total_cost_inr": "\u20b983491.67",
+  "budget_inr": "\u20b999000.00",
+  "budget_usd": "$1188.00",
+  "status": "Within budget",
+  "remaining_budget_inr": "\u20b915508.33"
+}

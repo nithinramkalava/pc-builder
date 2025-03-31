@@ -1,0 +1,114 @@
+{
+  "components": {
+    "cpu": {
+      "name": "AMD Ryzen 9 7900X 4.7 GHz 12-Core Processor",
+      "price": "$355.00",
+      "price_inr": "\u20b929583.33",
+      "details": {
+        "manufacturer": "AMD",
+        "core_count": 12,
+        "core_clock": "4.7 GHz",
+        "boost_clock": "5.6 GHz",
+        "rank": 74,
+        "ml_score": 374.6612322982425
+      }
+    },
+    "motherboard": {
+      "name": "ASRock Phantom Gaming X870E Nova WiFi ATX AM5 Motherboard",
+      "price": "$349.99",
+      "price_inr": "\u20b929165.83",
+      "details": {
+        "form_factor": "ATX",
+        "chipset": "AMD X870E",
+        "memory_type": "DDR5",
+        "rank": 88,
+        "ml_score": 419.3770846994512
+      }
+    },
+    "cooler": {
+      "name": "EK EK-Nucleus AIO CR240 Lux D-RGB 72 CFM Liquid CPU Cooler",
+      "price": "$118.79",
+      "price_inr": "\u20b99899.17",
+      "details": {
+        "type": "Air Cooled",
+        "noise_level": "36 dB",
+        "rank": 208,
+        "ml_score": 118.99946457774253
+      }
+    },
+    "gpu": {
+      "name": "PNY VCNRTX2000ADAS-LLP RTX 2000E Ada Generation 16 GB PCIe x8 Video Card",
+      "price": "$749.99",
+      "price_inr": "\u20b962499.17",
+      "details": {
+        "chipset": "RTX 2000E Ada Generation",
+        "memory": "16 GB",
+        "core_clock": "NaN",
+        "rank": 17,
+        "ml_score": 2700.5418512516835
+      }
+    },
+    "case": {
+      "name": "be quiet! Pure Base 600 ATX Mid Tower Case",
+      "price": "$99.90",
+      "price_inr": "\u20b98325.00",
+      "details": {
+        "type": "ATX Mid Tower",
+        "color": "Black",
+        "rank": 125,
+        "ml_score": 176.14793491490485
+      }
+    },
+    "psu": {
+      "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+      "price": "$79.98",
+      "price_inr": "\u20b96665.00",
+      "details": {
+        "wattage": "1000 W",
+        "efficiency": "80+ Gold",
+        "modular": null,
+        "rank": 68,
+        "ml_score": 229.19487517810367
+      }
+    },
+    "memory": {
+      "name": "G.Skill Flare X5 96 GB (2 x 48 GB) DDR5-6000 CL30 Memory",
+      "price": "$284.99",
+      "price_inr": "\u20b923749.17",
+      "details": {
+        "speed": "DDR5-6000",
+        "modules": "2 x 48GB",
+        "rank": 44,
+        "ml_score": 307.87689917941253
+      }
+    },
+    "storage": {
+      "name": "Leven JPS600",
+      "price": "101.99",
+      "price_inr": "\u20b98499.17",
+      "details": {
+        "capacity": "2000 GB",
+        "type": "SSD",
+        "interface": "M.2 PCIe 3.0 X4",
+        "rank": 9999,
+        "ml_score": 0
+      }
+    }
+  },
+  "selection_order": [
+    "cpu",
+    "motherboard",
+    "cooler",
+    "gpu",
+    "case",
+    "psu",
+    "memory",
+    "storage"
+  ],
+  "total_cost_usd": "$2140.63",
+  "total_cost_inr": "\u20b9178385.83",
+  "budget_inr": "\u20b9199000.00",
+  "budget_usd": "$2388.00",
+  "status": "Within budget",
+  "remaining_budget_inr": "\u20b920614.17"
+}
