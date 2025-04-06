@@ -150,6 +150,17 @@ export async function GET(
       console.log(`Executing query: ${queryText} with params:`, params);
       const result = await client.query(queryText, params);
       console.log(`Query returned ${result.rows.length} rows`);
+
+      // Add debug logging for storage data
+      if (partType === "storage" && result.rows.length > 0) {
+        console.log("Storage API result sample:", {
+          firstRow: result.rows[0],
+          hasCapacityField: "capacity" in result.rows[0],
+          capacityValue: result.rows[0].capacity,
+          capacityType: typeof result.rows[0].capacity,
+        });
+      }
+
       return NextResponse.json(result.rows);
     } catch (queryError) {
       console.error("Database query error:", queryError);

@@ -136,15 +136,25 @@ class PCRecommendationSystem:
         
         return component_budget_usd
     
+    def _get_market_segment(self):
+        """Get the preferred market segment from user preferences"""
+        # Default to Consumer if not specified
+        return self.user_prefs["technicalPreferences"].get("marketSegment", "Consumer")
+        
     def select_cpu(self):
         """Select the best CPU within budget, considering user preferences"""
         budget = self._get_component_budget("cpu")
         original_budget = budget
         
+        # Get preferred market segment
+        market_segment = self._get_market_segment()
+        print(f"DEBUG: Using market segment: {market_segment} for CPU selection")
+        
         # Build query based on preferences - sort by rank first (lower is better), then price in ascending order for value
+        # Include market_segment filter
         query = """
             SELECT * FROM cpu_specs 
-            WHERE price_num <= %s AND price_num > 0 
+            WHERE price_num <= %s AND price_num > 0 AND market_segment = %s
             ORDER BY 
                 CASE WHEN rank IS NULL THEN 9999 ELSE rank END ASC,
                 price_num ASC
@@ -157,7 +167,7 @@ class PCRecommendationSystem:
             if platform_pref.upper() == "AMD":
                 query = """
                     SELECT * FROM cpu_specs 
-                    WHERE price_num <= %s AND manufacturer = 'AMD' AND price_num > 0 
+                    WHERE price_num <= %s AND manufacturer = 'AMD' AND price_num > 0 AND market_segment = %s
                     ORDER BY 
                         CASE WHEN rank IS NULL THEN 9999 ELSE rank END ASC,
                         price_num ASC
@@ -166,7 +176,7 @@ class PCRecommendationSystem:
             elif platform_pref.upper() == "INTEL":
                 query = """
                     SELECT * FROM cpu_specs 
-                    WHERE price_num <= %s AND manufacturer = 'Intel' AND price_num > 0 
+                    WHERE price_num <= %s AND manufacturer = 'Intel' AND price_num > 0 AND market_segment = %s
                     ORDER BY 
                         CASE WHEN rank IS NULL THEN 9999 ELSE rank END ASC,
                         price_num ASC
@@ -175,38 +185,58 @@ class PCRecommendationSystem:
         
         try:
             # Execute query
-            self.cursor.execute(query, (budget,))
+            self.cursor.execute(query, (budget, market_segment))
             results = self.cursor.fetchall()
             
             if not results:
                 # First fallback: Try with a 50% higher budget
                 budget = original_budget * 1.5
-                print(f"DEBUG: No CPUs found within budget ${original_budget}, trying with 50% higher budget: ${budget}")
-                self.cursor.execute(query, (budget,))
+                print(f"DEBUG: No CPUs found within budget ${original_budget} for market segment {market_segment}, trying with 50% higher budget: ${budget}")
+                self.cursor.execute(query, (budget, market_segment))
                 results = self.cursor.fetchall()
                 
             if not results:
                 # Second fallback: Try with a 100% higher budget (double the original)
                 budget = original_budget * 2
-                print(f"DEBUG: No CPUs found with 50% higher budget, trying with double budget: ${budget}")
-                self.cursor.execute(query, (budget,))
+                print(f"DEBUG: No CPUs found with 50% higher budget for market segment {market_segment}, trying with double budget: ${budget}")
+                self.cursor.execute(query, (budget, market_segment))
                 results = self.cursor.fetchall()
                 
             if not results:
-                # Final fallback: Try with a maximum budget cap of 2.5x
+                # Third fallback: Try with a maximum budget cap of 2.5x
                 budget = original_budget * 2.5
-                print(f"DEBUG: No CPUs found with double budget, trying with final cap of ${budget}")
-                self.cursor.execute(query, (budget,))
+                print(f"DEBUG: No CPUs found with double budget for market segment {market_segment}, trying with final cap of ${budget}")
+                self.cursor.execute(query, (budget, market_segment))
                 results = self.cursor.fetchall()
                 
             if not results:
-                # Last resort: look for the cheapest CPU
-                print(f"DEBUG: No CPUs within any budget cap, looking for cheapest CPU")
+                # Fourth fallback: If market segment is "Workstation" but no results, fall back to "Consumer"
+                if market_segment == "Workstation":
+                    market_segment = "Consumer"
+                    print(f"DEBUG: No CPUs found with any budget for Workstation market, falling back to Consumer market segment")
+                    self.cursor.execute(query, (budget, market_segment))
+                    results = self.cursor.fetchall()
+                
+            if not results:
+                # Last resort: look for the cheapest CPU in the preferred market segment
+                print(f"DEBUG: No CPUs within any budget cap for market segment {market_segment}, looking for cheapest CPU")
                 
                 # Modify query to sort by price ascending only
                 cheapest_query = query.replace("ORDER BY \n                CASE WHEN rank IS NULL THEN 9999 ELSE rank END ASC,\n                price_num ASC", 
                                               "ORDER BY price_num ASC")
-                self.cursor.execute(cheapest_query)
+                self.cursor.execute(cheapest_query, (99999, market_segment))  # Use a very high budget limit
+                results = self.cursor.fetchall()
+                
+            if not results:
+                # Final resort: Ignore market segment completely
+                print(f"DEBUG: No CPUs found in preferred market segment, looking for any CPU")
+                last_resort_query = """
+                    SELECT * FROM cpu_specs 
+                    WHERE price_num > 0
+                    ORDER BY price_num ASC
+                    LIMIT 1
+                """
+                self.cursor.execute(last_resort_query)
                 results = self.cursor.fetchall()
                 
             if not results:
@@ -545,18 +575,25 @@ class PCRecommendationSystem:
         original_budget = budget
         motherboard_id = self.selected_components["motherboard"]["id"]
         
+        # Get preferred market segment
+        market_segment = self._get_market_segment()
+        print(f"DEBUG: Using market segment: {market_segment} for GPU selection")
+        
         try:
-            print(f"DEBUG: Starting GPU selection for motherboard_id={motherboard_id} with budget=${budget}")
+            print(f"DEBUG: Starting GPU selection for motherboard_id={motherboard_id} with budget=${budget} and market segment={market_segment}")
             
             # Consider GPU platform preference if specified
             platform_pref = self.user_prefs["technicalPreferences"].get("gpuPlatform")
-            platform_filter = ""
+            brand_filter = ""
             
             if platform_pref:
                 if platform_pref.upper() == "NVIDIA":
-                    platform_filter = "AND v.chipset LIKE '%GeForce%'"
+                    brand_filter = "AND g.brand = 'NVIDIA'"
                 elif platform_pref.upper() == "AMD":
-                    platform_filter = "AND v.chipset LIKE '%Radeon%'"
+                    brand_filter = "AND g.brand = 'AMD'"
+                elif platform_pref.upper() == "INTEL":
+                    brand_filter = "AND g.brand = 'Intel'"
+                print(f"DEBUG: Applied brand filter for {platform_pref}: {brand_filter}")
             
             # First, check if the compatibility function returns any results at all
             compat_check_query = """
@@ -581,59 +618,120 @@ class PCRecommendationSystem:
             print(f"DEBUG: Available columns in get_compatible_video_cards: {column_names}")
             
             # Get all compatible GPUs with price below budget and join with gpu_specs to get rank
-            query = """
-                SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num
+            # Include market_segment filter and brand filter if specified
+            query = f"""
+                SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num, g.market_segment, g.brand
                 FROM get_compatible_video_cards(%s) v
                 LEFT JOIN gpu_specs g ON v.id = g.id
-                WHERE g.price_num <= %s AND g.price_num > 0
+                WHERE g.price_num <= %s AND g.price_num > 0 AND g.market_segment = %s {brand_filter}
                 ORDER BY 
                     CASE WHEN g.rank IS NULL THEN 9999 ELSE g.rank END ASC,
                     g.price_num ASC
                 LIMIT 10
             """
             
-            print(f"DEBUG: Executing query with budget filter: {budget}")
-            self.cursor.execute(query, (motherboard_id, budget))
+            print(f"DEBUG: Executing query with budget filter: {budget}, market segment: {market_segment}, and brand filter: {brand_filter}")
+            self.cursor.execute(query, (motherboard_id, budget, market_segment))
             results = self.cursor.fetchall()
             
             print(f"DEBUG: Query returned {len(results)} results")
             
+            if not results and brand_filter:
+                # If no results with brand filter, try without it first before increasing budget
+                print(f"DEBUG: No GPUs found with brand filter {brand_filter}, trying without brand restriction")
+                query_no_brand = f"""
+                    SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num, g.market_segment, g.brand
+                    FROM get_compatible_video_cards(%s) v
+                    LEFT JOIN gpu_specs g ON v.id = g.id
+                    WHERE g.price_num <= %s AND g.price_num > 0 AND g.market_segment = %s
+                    ORDER BY 
+                        CASE WHEN g.rank IS NULL THEN 9999 ELSE g.rank END ASC,
+                        g.price_num ASC
+                    LIMIT 10
+                """
+                self.cursor.execute(query_no_brand, (motherboard_id, budget, market_segment))
+                results = self.cursor.fetchall()
+                print(f"DEBUG: Query without brand filter returned {len(results)} results")
+                
+                if results:
+                    print(f"WARNING: Ignoring brand preference '{platform_pref}' as no matching GPUs were found")
+                    brand_filter = ""  # Clear brand filter for future queries
+            
             if not results:
                 # First fallback: Try with a 50% higher budget
                 budget = original_budget * 1.5
-                print(f"DEBUG: No GPUs found within budget ${original_budget}, trying with 50% higher budget: ${budget}")
-                self.cursor.execute(query, (motherboard_id, budget))
+                print(f"DEBUG: No GPUs found within budget ${original_budget} for market segment {market_segment}, trying with 50% higher budget: ${budget}")
+                self.cursor.execute(query, (motherboard_id, budget, market_segment))
                 results = self.cursor.fetchall()
                 print(f"DEBUG: Query with 50% higher budget returned {len(results)} results")
             
             if not results:
                 # Second fallback: Try with a 100% higher budget (double the original)
                 budget = original_budget * 2
-                print(f"DEBUG: No GPUs found with 50% higher budget, trying with double budget: ${budget}")
-                self.cursor.execute(query, (motherboard_id, budget))
+                print(f"DEBUG: No GPUs found with 50% higher budget for market segment {market_segment}, trying with double budget: ${budget}")
+                self.cursor.execute(query, (motherboard_id, budget, market_segment))
                 results = self.cursor.fetchall()
                 print(f"DEBUG: Query with double budget returned {len(results)} results")
                 
             if not results:
                 # Third fallback: Try with a maximum budget cap of 2.5x
                 budget = original_budget * 2.5
-                print(f"DEBUG: No GPUs found with double budget, trying with final cap of ${budget}")
-                self.cursor.execute(query, (motherboard_id, budget))
+                print(f"DEBUG: No GPUs found with double budget for market segment {market_segment}, trying with final cap of ${budget}")
+                self.cursor.execute(query, (motherboard_id, budget, market_segment))
                 results = self.cursor.fetchall()
                 print(f"DEBUG: Query with 2.5x budget returned {len(results)} results")
             
             if not results:
-                # Last resort: Look for the cheapest compatible GPU regardless of budget
-                print(f"DEBUG: No GPUs within any budget cap, looking for cheapest compatible GPU")
-                cheapest_query = """
-                    SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num
+                # Fourth fallback: If market segment is "Workstation" but no results, fall back to "Consumer"
+                if market_segment == "Workstation":
+                    market_segment = "Consumer"
+                    print(f"DEBUG: No GPUs found with any budget for Workstation market, falling back to Consumer market segment")
+                    self.cursor.execute(query, (motherboard_id, budget, market_segment))
+                    results = self.cursor.fetchall()
+                    print(f"DEBUG: Query with Consumer market segment returned {len(results)} results")
+            
+            if not results:
+                # Last resort: Look for the cheapest compatible GPU in the preferred market segment
+                print(f"DEBUG: No GPUs within any budget cap for market segment {market_segment}, looking for cheapest compatible GPU")
+                cheapest_query = f"""
+                    SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num, g.market_segment, g.brand
+                    FROM get_compatible_video_cards(%s) v
+                    LEFT JOIN gpu_specs g ON v.id = g.id
+                    WHERE g.price_num > 0 AND g.market_segment = %s {brand_filter}
+                    ORDER BY g.price_num ASC
+                    LIMIT 1
+                """
+                self.cursor.execute(cheapest_query, (motherboard_id, market_segment))
+                results = self.cursor.fetchall()
+                print(f"DEBUG: Cheapest GPU query returned {len(results)} results")
+                
+            if not results and brand_filter:
+                # If still no results and brand filter is active, try without it
+                print(f"DEBUG: No GPUs found with brand filter, trying without brand restriction")
+                cheapest_query_no_brand = f"""
+                    SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num, g.market_segment, g.brand
+                    FROM get_compatible_video_cards(%s) v
+                    LEFT JOIN gpu_specs g ON v.id = g.id
+                    WHERE g.price_num > 0 AND g.market_segment = %s
+                    ORDER BY g.price_num ASC
+                    LIMIT 1
+                """
+                self.cursor.execute(cheapest_query_no_brand, (motherboard_id, market_segment))
+                results = self.cursor.fetchall()
+                print(f"DEBUG: Cheapest GPU query without brand filter returned {len(results)} results")
+                
+            if not results:
+                # Final resort: Ignore market segment completely
+                print(f"DEBUG: No GPUs found in preferred market segment, looking for any compatible GPU")
+                final_query = """
+                    SELECT v.*, g.rank as gpu_rank, g.ml_score, g.price_num, g.brand
                     FROM get_compatible_video_cards(%s) v
                     LEFT JOIN gpu_specs g ON v.id = g.id
                     WHERE g.price_num > 0
                     ORDER BY g.price_num ASC
                     LIMIT 1
                 """
-                self.cursor.execute(cheapest_query, (motherboard_id,))
+                self.cursor.execute(final_query, (motherboard_id,))
                 results = self.cursor.fetchall()
                 
             if not results:
@@ -664,7 +762,7 @@ class PCRecommendationSystem:
             if "gpu_rank" in gpu:
                 gpu["rank"] = gpu["gpu_rank"]
                 
-            print(f"DEBUG: Selected GPU: {gpu.get('name')} at {gpu.get('price')}")
+            print(f"DEBUG: Selected GPU: {gpu.get('name')} at {gpu.get('price')}, brand: {gpu.get('brand', 'unknown')}, market segment: {gpu.get('market_segment', 'unknown')}")
             
             # Use existing price_num if available or extract from price string
             if "price_num" in gpu and gpu["price_num"] is not None and gpu["price_num"] > 0:

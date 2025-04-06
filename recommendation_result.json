@@ -1,0 +1,114 @@
+{
+  "components": {
+    "cpu": {
+      "name": "AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor",
+      "price": "$212.10",
+      "price_inr": "\u20b917675.00",
+      "details": {
+        "manufacturer": "AMD",
+        "core_count": 6,
+        "core_clock": "4.7 GHz",
+        "boost_clock": "5.3 GHz",
+        "rank": 149,
+        "ml_score": 254.01919317767147
+      }
+    },
+    "motherboard": {
+      "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+      "price": "$140.98",
+      "price_inr": "\u20b911748.33",
+      "details": {
+        "form_factor": "Mini ITX",
+        "chipset": "AMD A620",
+        "memory_type": "DDR5",
+        "rank": 138,
+        "ml_score": 332.7811873098641
+      }
+    },
+    "cooler": {
+      "name": "Noctua NH-U9DXi4 37.8 CFM CPU Cooler",
+      "price": "$64.95",
+      "price_inr": "\u20b95412.50",
+      "details": {
+        "type": "Air Cooled",
+        "noise_level": "13.1 - 17.6 dB",
+        "rank": 262,
+        "ml_score": 94.25485440353552
+      }
+    },
+    "gpu": {
+      "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+      "price": "$449.99",
+      "price_inr": "\u20b937499.17",
+      "details": {
+        "chipset": "GeForce RTX 4060 Ti",
+        "memory": "16 GB",
+        "core_clock": "2310 MHz",
+        "rank": 173,
+        "ml_score": 948.3152036448942
+      }
+    },
+    "case": {
+      "name": "Jonsbo C6-ITX Mini ITX Desktop Case",
+      "price": "$58.99",
+      "price_inr": "\u20b94915.83",
+      "details": {
+        "type": "Mini ITX Desktop",
+        "color": "Black",
+        "rank": 282,
+        "ml_score": 130.4760715417941
+      }
+    },
+    "psu": {
+      "name": "Thermaltake Toughpower SFX 850 W 80+ Gold Certified Fully Modular SFX Power Supply",
+      "price": "$117.95",
+      "price_inr": "\u20b99829.17",
+      "details": {
+        "wattage": "850 W",
+        "efficiency": "80+ Gold",
+        "modular": null,
+        "rank": 152,
+        "ml_score": 121.34303242771378
+      }
+    },
+    "memory": {
+      "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+      "price": "$153.99",
+      "price_inr": "\u20b912832.50",
+      "details": {
+        "speed": "DDR5-4800",
+        "modules": "2 x 32GB",
+        "rank": 51,
+        "ml_score": 258.40807219698695
+      }
+    },
+    "storage": {
+      "name": "Leven JM600",
+      "price": "54.99",
+      "price_inr": "\u20b94582.50",
+      "details": {
+        "capacity": "1000 GB",
+        "type": "SSD",
+        "interface": "M.2 SATA",
+        "rank": 9999,
+        "ml_score": 0
+      }
+    }
+  },
+  "selection_order": [
+    "cpu",
+    "motherboard",
+    "cooler",
+    "gpu",
+    "case",
+    "psu",
+    "memory",
+    "storage"
+  ],
+  "total_cost_usd": "$1253.94",
+  "total_cost_inr": "\u20b9104495.00",
+  "budget_inr": "\u20b9120000.00",
+  "budget_usd": "$1440.00",
+  "status": "Within budget",
+  "remaining_budget_inr": "\u20b915505.00"
+}

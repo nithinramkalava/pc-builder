@@ -7,6 +7,7 @@ type Part = {
   id: number;
   name: string;
   price: number | string | null;
+  capacity?: number;
 };
 
 export type PartType =
@@ -154,10 +155,49 @@ const SkilledBuilder = () => {
         let data: Part[];
         try {
           data = JSON.parse(textResponse) as Part[];
+
+          // Add debug logging for storage data
+          if (currentPart === "storage" && data.length > 0) {
+            console.log("Storage data sample:", {
+              firstItem: data[0],
+              hasCapacityField: "capacity" in data[0],
+              capacityType: typeof data[0].capacity,
+              capacityValue: data[0].capacity,
+            });
+          }
         } catch (parseError) {
           console.error("[Client] Failed to parse JSON response:", parseError);
           console.error("[Client] Raw response:", textResponse);
           throw new Error("Invalid response from server");
+        }
+
+        // For storage components, append capacity to name for better display
+        if (currentPart === "storage") {
+          data = data.map((part) => {
+            // Convert capacity to number if it's a string
+            if (part.capacity !== undefined) {
+              const capacityNum =
+                typeof part.capacity === "string"
+                  ? parseFloat(part.capacity)
+                  : part.capacity;
+
+              part.capacity = capacityNum;
+
+              const capacityText =
+                capacityNum >= 1000
+                  ? `${(capacityNum / 1000).toFixed(1)}TB`
+                  : `${capacityNum}GB`;
+
+              // Only append if not already in the name
+              if (!part.name.includes("GB") && !part.name.includes("TB")) {
+                return {
+                  ...part,
+                  name: `${part.name} (${capacityText})`,
+                };
+              }
+            }
+            return part;
+          });
         }
 
         console.log(
@@ -262,6 +302,17 @@ const SkilledBuilder = () => {
     return `₹${(numericPrice * 83).toLocaleString("en-IN")}`;
   };
 
+  // Add formatter for storage capacity
+  const formatCapacity = (capacityGB: number | undefined) => {
+    if (!capacityGB) return "";
+
+    if (capacityGB >= 1000) {
+      return `${(capacityGB / 1000).toFixed(1)} TB`;
+    } else {
+      return `${capacityGB} GB`;
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="border-b flex">
@@ -299,6 +350,9 @@ const SkilledBuilder = () => {
               </span>
               <div className="text-right">
                 <div>{part?.name}</div>
+                {type === "storage" && part?.capacity && (
+                  <div>{formatCapacity(part.capacity)}</div>
+                )}
                 <div>{formatPrice(part?.price)}</div>
               </div>
             </div>
@@ -336,6 +390,9 @@ const SkilledBuilder = () => {
                   className="p-4 border rounded text-left space-y-2 text-white bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
                 >
                   <div className="font-medium">{part.name}</div>
+                  {currentPart === "storage" && part.capacity && (
+                    <div>{formatCapacity(part.capacity)}</div>
+                  )}
                   <div>{formatPrice(part.price)}</div>
                 </button>
               ))}
