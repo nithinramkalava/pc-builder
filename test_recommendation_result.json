@@ -1,95 +1,100 @@
 {
   "components": {
     "cpu": {
-      "name": "AMD Ryzen 9 7950X3D 4.2 GHz 16-Core Processor",
-      "price": "$699.00",
-      "price_inr": "\u20b958250.00",
+      "name": "AMD Ryzen 6-Core Processor",
+      "price": "$184.98",
+      "price_inr": "\u20b915415.00",
       "details": {
         "manufacturer": "AMD",
-        "core_count": 16,
-        "core_clock": "4.2 GHz",
-        "boost_clock": "5.7 GHz",
-        "rank": 26,
-        "ml_score": 714.9935753126002
+        "core_count": 6,
+        "core_clock": "3.8 GHz",
+        "boost_clock": "5.1 GHz",
+        "rank": 182,
+        "ml_score": 219.56009755644328
       }
     },
     "motherboard": {
-      "name": "ASRock X670E Taichi EATX AM5 Motherboard",
-      "price": "$397.99",
-      "price_inr": "\u20b933165.83",
+      "name": "Asus PRIME A620M-A-CSM Micro ATX AM5 Motherboard",
+      "price": "$129.99",
+      "price_inr": "\u20b910832.50",
       "details": {
-        "form_factor": "EATX",
-        "chipset": "AMD X670E",
+        "chipset": "AMD A620",
+        "form_factor": "Micro ATX",
         "memory_type": "DDR5",
-        "rank": 41,
-        "ml_score": 539.2831929099597
+        "color": "Silver / Black",
+        "rank": 186,
+        "ml_score": 263.99182698883646
       }
     },
     "cooler": {
-      "name": "Fractal Design Lumen S36 V2 56 CFM Liquid CPU Cooler",
-      "price": "$175.31",
-      "price_inr": "\u20b914609.17",
+      "name": "Silverstone AR12 RGB 68.9 CFM CPU Cooler",
+      "price": "$31.99",
+      "price_inr": "\u20b92665.83",
       "details": {
-        "type": "Air Cooled",
-        "noise_level": "10 - 33.2 dB",
-        "rank": 87,
-        "ml_score": 205.23093475317052
-      }
-    },
-    "gpu": {
-      "name": "Gigabyte AORUS MASTER GeForce RTX 5070 Ti 16 GB Video Card",
-      "price": "$1009.98",
-      "price_inr": "\u20b984165.00",
-      "details": {
-        "chipset": "GeForce RTX 5070 Ti",
-        "memory": "16 GB",
-        "core_clock": "2300 MHz",
-        "rank": 76,
-        "ml_score": 1504.0908713843467
-      }
-    },
-    "case": {
-      "name": "MUSETEX K2 ATX Mid Tower Case",
-      "price": "$99.99",
-      "price_inr": "\u20b98332.50",
-      "details": {
-        "type": "ATX Mid Tower",
-        "color": "Black",
-        "rank": 150,
-        "ml_score": 164.92384373011728
-      }
-    },
-    "psu": {
-      "name": "Corsair RM1200x SHIFT 1200 W 80+ Gold Certified Fully Modular Side Interface ATX Power Supply",
-      "price": "$209.99",
-      "price_inr": "\u20b917499.17",
-      "details": {
-        "wattage": "1200 W",
-        "efficiency": "80+ Gold",
-        "modular": null,
-        "rank": 46,
-        "ml_score": 277.6574381330187
+        "color": "Silver / Black",
+        "noise_level": "9 - 29 dB",
+        "rank": 334,
+        "ml_score": 58.27694455658901
       }
     },
     "memory": {
-      "name": "G.Skill Trident Z5 Royal Neo RGB 96 GB (2 x 48 GB) DDR5-6000 CL28 Memory",
-      "price": "$449.99",
-      "price_inr": "\u20b937499.17",
+      "name": "Patriot Viper Venom 64 GB (2 x 32 GB) DDR5-6000 CL36 Memory",
+      "price": "$129.99",
+      "price_inr": "\u20b910832.50",
       "details": {
+        "color": "Black / White",
+        "modules": "2 x 32GB",
         "speed": "DDR5-6000",
-        "modules": "2 x 48GB",
-        "rank": 19,
-        "ml_score": 418.5557681489378
+        "rank": 107,
+        "ml_score": 182.39007411092896
+      }
+    },
+    "gpu": {
+      "name": "Asus Phoenix V2 GeForce RTX 3050 8GB 8 GB Video Card",
+      "price": "$229.99",
+      "price_inr": "\u20b919165.83",
+      "details": {
+        "chipset": "GeForce RTX 3050 8GB",
+        "core_clock": "1550 MHz",
+        "boost_clock": "1807 MHz",
+        "color": "Black",
+        "memory": "8 GB",
+        "interface": "PCIe x16",
+        "rank": 354,
+        "ml_score": 480.0245452022955
+      }
+    },
+    "case": {
+      "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+      "price": "$39.99",
+      "price_inr": "\u20b93332.50",
+      "details": {
+        "type": "MicroATX Mini Tower",
+        "color": "Black",
+        "rank": 542,
+        "ml_score": 62.84182119793669
+      }
+    },
+    "psu": {
+      "name": "Apevia Galaxy 650 W 80+ Gold Certified Semi-modular ATX Power Supply",
+      "price": "$54.99",
+      "price_inr": "\u20b94582.50",
+      "details": {
+        "type": "ATX",
+        "wattage": 650,
+        "efficiency": "80+ Gold",
+        "rank": 131,
+        "ml_score": 145.05813585591878
       }
     },
     "storage": {
-      "name": "Kingston KC3000",
-      "price": "162.99",
-      "price_inr": "\u20b913582.50",
+      "name": "ADATA Ultimate SU650",
+      "price": "9.5",
+      "price_inr": "\u20b9791.67",
       "details": {
-        "capacity": "2048 GB",
         "type": "SSD",
-        "interface": "M.2 PCIe 4.0 X4",
+        "capacity": 120,
+        "interface": "M.2 SATA",
         "rank": 9999,
         "ml_score": 0
       }
@@ -99,16 +104,16 @@
     "cpu",
     "motherboard",
     "cooler",
+    "memory",
     "gpu",
     "case",
     "psu",
-    "memory",
     "storage"
   ],
-  "total_cost_usd": "$3205.24",
-  "total_cost_inr": "\u20b9267103.33",
-  "budget_inr": "\u20b9300000.00",
-  "budget_usd": "$3600.00",
+  "total_cost_usd": "$811.42",
+  "total_cost_inr": "\u20b967618.33",
+  "budget_inr": "\u20b980000.00",
+  "budget_usd": "$960.00",
   "status": "Within budget",
-  "remaining_budget_inr": "\u20b932896.67"
+  "remaining_budget_inr": "\u20b912381.67"
 }

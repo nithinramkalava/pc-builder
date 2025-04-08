@@ -1,0 +1,2869 @@
+{
+  "1a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 5 8500G 4.1 GHz 6-Core Processor",
+        "price": "$148.88",
+        "price_inr": "\u20b912406.67",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 6,
+          "core_clock": "4.1 GHz",
+          "boost_clock": "5 GHz",
+          "rank": 185,
+          "ml_score": 214.9864263009037
+        }
+      },
+      "motherboard": {
+        "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+        "price": "$140.98",
+        "price_inr": "\u20b911748.33",
+        "details": {
+          "chipset": "AMD A620",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 138,
+          "ml_score": 332.7811873098641
+        }
+      },
+      "cooler": {
+        "name": "Silverstone AR12 RGB 68.9 CFM CPU Cooler",
+        "price": "$31.99",
+        "price_inr": "\u20b92665.83",
+        "details": {
+          "color": "Silver / Black",
+          "noise_level": "9 - 29 dB",
+          "rank": 334,
+          "ml_score": 58.27694455658901
+        }
+      },
+      "memory": {
+        "name": "G.Skill Ripjaws S5 48 GB (2 x 24 GB) DDR5-5200 CL40 Memory",
+        "price": "$89.99",
+        "price_inr": "\u20b97499.17",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 24GB",
+          "speed": "DDR5-5200",
+          "rank": 121,
+          "ml_score": 164.64947624279773
+        }
+      },
+      "gpu": {
+        "name": "MSI RTX 3060 Ventus 3X 12G OC GeForce RTX 3060 12GB 12 GB Video Card",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "GeForce RTX 3060 12GB",
+          "core_clock": "1320 MHz",
+          "boost_clock": "1807 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 188,
+          "ml_score": 912.1848421801413
+        }
+      },
+      "case": {
+        "name": "Cooler Master Q300L V2 MicroATX Mini Tower Case",
+        "price": "$54.99",
+        "price_inr": "\u20b94582.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 362,
+          "ml_score": 114.24658540673586
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 650 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$54.99",
+        "price_inr": "\u20b94582.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 650,
+          "efficiency": "80+ Gold",
+          "rank": 131,
+          "ml_score": 145.05813585591878
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$831.31",
+    "total_cost_inr": "\u20b969275.83",
+    "budget_inr": "\u20b980000.00",
+    "budget_usd": "$960.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b910724.17",
+    "build_id": "1a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "2a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 5 8500G 4.1 GHz 6-Core Processor",
+        "price": "$148.88",
+        "price_inr": "\u20b912406.67",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 6,
+          "core_clock": "4.1 GHz",
+          "boost_clock": "5 GHz",
+          "rank": 185,
+          "ml_score": 214.9864263009037
+        }
+      },
+      "motherboard": {
+        "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+        "price": "$140.98",
+        "price_inr": "\u20b911748.33",
+        "details": {
+          "chipset": "AMD A620",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 138,
+          "ml_score": 332.7811873098641
+        }
+      },
+      "cooler": {
+        "name": "be quiet! Pure Rock 2 FX CPU Cooler",
+        "price": "$52.90",
+        "price_inr": "\u20b94408.33",
+        "details": {
+          "color": "Black",
+          "noise_level": "7.9 - 24.4 dB",
+          "rank": 325,
+          "ml_score": 62.19961405933551
+        }
+      },
+      "memory": {
+        "name": "Crucial Pro 48 GB (2 x 24 GB) DDR5-6000 CL48 Memory",
+        "price": "$123.99",
+        "price_inr": "\u20b910332.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 24GB",
+          "speed": "DDR5-6000",
+          "rank": 115,
+          "ml_score": 171.90063599449277
+        }
+      },
+      "gpu": {
+        "name": "MSI RTX 3060 Ventus 3X 12G OC GeForce RTX 3060 12GB 12 GB Video Card",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "GeForce RTX 3060 12GB",
+          "core_clock": "1320 MHz",
+          "boost_clock": "1807 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 188,
+          "ml_score": 912.1848421801413
+        }
+      },
+      "case": {
+        "name": "Vetroo M05 MicroATX Mid Tower Case",
+        "price": "$49.99",
+        "price_inr": "\u20b94165.83",
+        "details": {
+          "type": "MicroATX Mid Tower",
+          "color": "White",
+          "rank": 398,
+          "ml_score": 103.45903019377661
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 650 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$54.99",
+        "price_inr": "\u20b94582.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 650,
+          "efficiency": "80+ Gold",
+          "rank": 131,
+          "ml_score": 145.05813585591878
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$881.22",
+    "total_cost_inr": "\u20b973435.00",
+    "budget_inr": "\u20b990000.00",
+    "budget_usd": "$1080.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b916565.00",
+    "build_id": "2a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "3a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 5 7600 3.8 GHz 6-Core Processor",
+        "price": "$184.98",
+        "price_inr": "\u20b915415.00",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 6,
+          "core_clock": "3.8 GHz",
+          "boost_clock": "5.1 GHz",
+          "rank": 182,
+          "ml_score": 219.56009755644328
+        }
+      },
+      "motherboard": {
+        "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+        "price": "$140.98",
+        "price_inr": "\u20b911748.33",
+        "details": {
+          "chipset": "AMD A620",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 138,
+          "ml_score": 332.7811873098641
+        }
+      },
+      "cooler": {
+        "name": "Alphacool Core Ocean T38 62.8 CFM Liquid CPU Cooler",
+        "price": "$56.00",
+        "price_inr": "\u20b94666.67",
+        "details": {
+          "color": "Black",
+          "noise_level": "0 - 34.3 dB",
+          "rank": 294,
+          "ml_score": 76.17081923927722
+        }
+      },
+      "memory": {
+        "name": "TEAMGROUP T-Create Expert 48 GB (2 x 24 GB) DDR5-6400 CL32 Memory",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "color": "Black / Gold",
+          "modules": "2 x 24GB",
+          "speed": "DDR5-6400",
+          "rank": 103,
+          "ml_score": 184.83596966287578
+        }
+      },
+      "gpu": {
+        "name": "MSI RTX 3060 Ventus 3X 12G OC GeForce RTX 3060 12GB 12 GB Video Card",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "GeForce RTX 3060 12GB",
+          "core_clock": "1320 MHz",
+          "boost_clock": "1807 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 188,
+          "ml_score": 912.1848421801413
+        }
+      },
+      "case": {
+        "name": "Cooler Master Q300L V2 MicroATX Mini Tower Case",
+        "price": "$54.99",
+        "price_inr": "\u20b94582.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 362,
+          "ml_score": 114.24658540673586
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 850 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$69.98",
+        "price_inr": "\u20b95831.67",
+        "details": {
+          "type": "ATX",
+          "wattage": 850,
+          "efficiency": "80+ Gold",
+          "rank": 105,
+          "ml_score": 179.07746292439606
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$956.41",
+    "total_cost_inr": "\u20b979700.83",
+    "budget_inr": "\u20b9100000.00",
+    "budget_usd": "$1200.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b920299.17",
+    "build_id": "3a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "4a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-3970X Extreme Edition 3.5 GHz 6-Core Processor",
+        "price": "$176.86",
+        "price_inr": "\u20b914738.33",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 6,
+          "core_clock": "3.5 GHz",
+          "rank": 121,
+          "ml_score": 306.7732358382574
+        }
+      },
+      "motherboard": {
+        "name": "Supermicro X9SRI-F-O ATX LGA2011 Motherboard",
+        "price": "$545.49",
+        "price_inr": "\u20b945457.50",
+        "details": {
+          "chipset": "Intel C602",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Green",
+          "rank": 8,
+          "ml_score": 1002.1950801371876
+        }
+      },
+      "cooler": {
+        "name": "Noctua NH-U9DXi4 37.8 CFM CPU Cooler",
+        "price": "$64.95",
+        "price_inr": "\u20b95412.50",
+        "details": {
+          "noise_level": "13.1 - 17.6 dB",
+          "rank": 262,
+          "ml_score": 94.25485440353552
+        }
+      },
+      "memory": {
+        "name": "Kingston ValueRAM 1 GB (1 x 1 GB) DDR3-1333 CL9 Memory",
+        "price": "$24.90",
+        "price_inr": "\u20b92075.00",
+        "details": {
+          "color": "Green",
+          "modules": "1 x 1GB",
+          "speed": "DDR3-1333",
+          "rank": 20,
+          "ml_score": 416.1997384458284
+        }
+      },
+      "gpu": {
+        "name": "MSI RTX 3060 Ventus 3X 12G OC GeForce RTX 3060 12GB 12 GB Video Card",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "GeForce RTX 3060 12GB",
+          "core_clock": "1320 MHz",
+          "boost_clock": "1807 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 188,
+          "ml_score": 912.1848421801413
+        }
+      },
+      "case": {
+        "name": "GameMax MeshBox ATX Mid Tower Case",
+        "price": "$65.19",
+        "price_inr": "\u20b95432.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 224,
+          "ml_score": 142.67450884068813
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 850 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$69.98",
+        "price_inr": "\u20b95831.67",
+        "details": {
+          "type": "ATX",
+          "wattage": 850,
+          "efficiency": "80+ Gold",
+          "rank": 105,
+          "ml_score": 179.07746292439606
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1256.86",
+    "total_cost_inr": "\u20b9104738.33",
+    "budget_inr": "\u20b9110000.00",
+    "budget_usd": "$1320.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b95261.67",
+    "build_id": "4a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "5a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor",
+        "price": "$212.10",
+        "price_inr": "\u20b917675.00",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 6,
+          "core_clock": "4.7 GHz",
+          "boost_clock": "5.3 GHz",
+          "rank": 149,
+          "ml_score": 254.01919317767147
+        }
+      },
+      "motherboard": {
+        "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+        "price": "$140.98",
+        "price_inr": "\u20b911748.33",
+        "details": {
+          "chipset": "AMD A620",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 138,
+          "ml_score": 332.7811873098641
+        }
+      },
+      "cooler": {
+        "name": "Noctua NH-U9DXi4 37.8 CFM CPU Cooler",
+        "price": "$64.95",
+        "price_inr": "\u20b95412.50",
+        "details": {
+          "noise_level": "13.1 - 17.6 dB",
+          "rank": 262,
+          "ml_score": 94.25485440353552
+        }
+      },
+      "memory": {
+        "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+        "price": "$153.99",
+        "price_inr": "\u20b912832.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR5-4800",
+          "rank": 51,
+          "ml_score": 258.40807219698695
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "Jonsbo C6-ITX Mini ITX Desktop Case",
+        "price": "$58.99",
+        "price_inr": "\u20b94915.83",
+        "details": {
+          "type": "Mini ITX Desktop",
+          "color": "Black",
+          "rank": 282,
+          "ml_score": 130.4760715417941
+        }
+      },
+      "psu": {
+        "name": "Thermaltake Toughpower SFX 850 W 80+ Gold Certified Fully Modular SFX Power Supply",
+        "price": "$117.95",
+        "price_inr": "\u20b99829.17",
+        "details": {
+          "type": "SFX",
+          "wattage": 850,
+          "efficiency": "80+ Gold",
+          "rank": 152,
+          "ml_score": 121.34303242771378
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1208.45",
+    "total_cost_inr": "\u20b9100704.17",
+    "budget_inr": "\u20b9120000.00",
+    "budget_usd": "$1440.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b919295.83",
+    "build_id": "5a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "6a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i9-9900KF 3.6 GHz 8-Core Processor",
+        "price": "$295.00",
+        "price_inr": "\u20b924583.33",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 8,
+          "core_clock": "3.6 GHz",
+          "boost_clock": "5 GHz",
+          "rank": 102,
+          "ml_score": 339.9330768257477
+        }
+      },
+      "motherboard": {
+        "name": "NZXT N7 Z390 ATX LGA1151 Motherboard",
+        "price": "$219.99",
+        "price_inr": "\u20b918332.50",
+        "details": {
+          "chipset": "Intel Z390",
+          "form_factor": "ATX",
+          "memory_type": "DDR4",
+          "color": "White / Black",
+          "rank": 119,
+          "ml_score": 360.2530126501648
+        }
+      },
+      "cooler": {
+        "name": "be quiet! Pure Loop 2 Liquid CPU Cooler",
+        "price": "$74.50",
+        "price_inr": "\u20b96208.33",
+        "details": {
+          "color": "Black",
+          "noise_level": "13 - 32.1 dB",
+          "rank": 284,
+          "ml_score": 83.44317471342507
+        }
+      },
+      "memory": {
+        "name": "Crucial CT64G4LFQ424A 64 GB (1 x 64 GB) Registered DDR4-2400 CL17 Memory",
+        "price": "$159.99",
+        "price_inr": "\u20b913332.50",
+        "details": {
+          "color": "Black / Green",
+          "modules": "1 x 64GB",
+          "speed": "DDR4-2400",
+          "rank": 68,
+          "ml_score": 226.24556033414285
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "Cougar MX330-X ATX Mid Tower Case",
+        "price": "$55.46",
+        "price_inr": "\u20b94621.67",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 424,
+          "ml_score": 98.14193628418532
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1344.41",
+    "total_cost_inr": "\u20b9112034.17",
+    "budget_inr": "\u20b9130000.00",
+    "budget_usd": "$1560.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b917965.83",
+    "build_id": "6a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "7a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 7 7700X 4.5 GHz 8-Core Processor",
+        "price": "$271.00",
+        "price_inr": "\u20b922583.33",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 8,
+          "core_clock": "4.5 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 131,
+          "ml_score": 278.9958940378929
+        }
+      },
+      "motherboard": {
+        "name": "ASRock A620I LIGHTNING WIFI Mini ITX AM5 Motherboard",
+        "price": "$140.98",
+        "price_inr": "\u20b911748.33",
+        "details": {
+          "chipset": "AMD A620",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 138,
+          "ml_score": 332.7811873098641
+        }
+      },
+      "cooler": {
+        "name": "ID-COOLING DX360 MAX 85 CFM Liquid CPU Cooler",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "color": "Black",
+          "noise_level": "32.5 dB",
+          "rank": 244,
+          "ml_score": 102.89028332951888
+        }
+      },
+      "memory": {
+        "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+        "price": "$153.99",
+        "price_inr": "\u20b912832.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR5-4800",
+          "rank": 51,
+          "ml_score": 258.40807219698695
+        }
+      },
+      "gpu": {
+        "name": "XFX Speedster SWFT 309 Radeon RX 6700 XT 12 GB Video Card",
+        "price": "$459.99",
+        "price_inr": "\u20b938332.50",
+        "details": {
+          "chipset": "Radeon RX 6700 XT",
+          "core_clock": "2321 MHz",
+          "boost_clock": "2581 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 197,
+          "ml_score": 890.1161615737847
+        }
+      },
+      "case": {
+        "name": "MUSETEX K2 ATX Mid Tower Case",
+        "price": "$99.99",
+        "price_inr": "\u20b98332.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 150,
+          "ml_score": 164.92384373011728
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1295.41",
+    "total_cost_inr": "\u20b9107950.83",
+    "budget_inr": "\u20b9140000.00",
+    "budget_usd": "$1680.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b932049.17",
+    "build_id": "7a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "8a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-14700F 2.1 GHz 20-Core Processor",
+        "price": "$309.99",
+        "price_inr": "\u20b925832.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 20,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 66,
+          "ml_score": 394.51192270501053
+        }
+      },
+      "motherboard": {
+        "name": "Gigabyte Z690M AORUS ELITE AX DDR4 Micro ATX LGA1700 Motherboard",
+        "price": "$268.89",
+        "price_inr": "\u20b922407.50",
+        "details": {
+          "chipset": "Intel Z690",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 115,
+          "ml_score": 371.0145609522797
+        }
+      },
+      "cooler": {
+        "name": "ID-COOLING DX360 MAX 85 CFM Liquid CPU Cooler",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "color": "Black",
+          "noise_level": "32.5 dB",
+          "rank": 244,
+          "ml_score": 102.89028332951888
+        }
+      },
+      "memory": {
+        "name": "G.Skill Ripjaws V 128 GB (4 x 32 GB) DDR4-2666 CL18 Memory",
+        "price": "$209.99",
+        "price_inr": "\u20b917499.17",
+        "details": {
+          "color": "Black",
+          "modules": "4 x 32GB",
+          "speed": "DDR4-2666",
+          "rank": 26,
+          "ml_score": 373.8669445464617
+        }
+      },
+      "gpu": {
+        "name": "Sapphire NITRO+ Radeon RX 7700 XT 12 GB Video Card",
+        "price": "$573.64",
+        "price_inr": "\u20b947803.33",
+        "details": {
+          "chipset": "Radeon RX 7700 XT",
+          "core_clock": "1700 MHz",
+          "color": "Black",
+          "memory": "12 GB",
+          "interface": "PCIe x16",
+          "rank": 187,
+          "ml_score": 912.4115801155485
+        }
+      },
+      "case": {
+        "name": "MUSETEX K2 ATX Mid Tower Case",
+        "price": "$99.99",
+        "price_inr": "\u20b98332.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 150,
+          "ml_score": 164.92384373011728
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1631.96",
+    "total_cost_inr": "\u20b9135996.67",
+    "budget_inr": "\u20b9150000.00",
+    "budget_usd": "$1800.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b914003.33",
+    "build_id": "8a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "9a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor",
+        "price": "$448.98",
+        "price_inr": "\u20b937415.00",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 8,
+          "core_clock": "4.2 GHz",
+          "boost_clock": "5 GHz",
+          "rank": 53,
+          "ml_score": 447.91442394340197
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X670E Steel Legend ATX AM5 Motherboard",
+        "price": "$259.99",
+        "price_inr": "\u20b921665.83",
+        "details": {
+          "chipset": "AMD X670E",
+          "form_factor": "ATX",
+          "memory_type": "DDR5",
+          "color": "Black / White",
+          "rank": 125,
+          "ml_score": 350.0582580515887
+        }
+      },
+      "cooler": {
+        "name": "ID-COOLING DX360 MAX 85 CFM Liquid CPU Cooler",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "color": "Black",
+          "noise_level": "32.5 dB",
+          "rank": 244,
+          "ml_score": 102.89028332951888
+        }
+      },
+      "memory": {
+        "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+        "price": "$153.99",
+        "price_inr": "\u20b912832.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR5-4800",
+          "rank": 51,
+          "ml_score": 258.40807219698695
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "GameMax MeshBox ATX Mid Tower Case",
+        "price": "$65.19",
+        "price_inr": "\u20b95432.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 224,
+          "ml_score": 142.67450884068813
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1547.60",
+    "total_cost_inr": "\u20b9128966.67",
+    "budget_inr": "\u20b9160000.00",
+    "budget_usd": "$1920.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b931033.33",
+    "build_id": "9a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "10a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-14700F 2.1 GHz 20-Core Processor",
+        "price": "$309.99",
+        "price_inr": "\u20b925832.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 20,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 66,
+          "ml_score": 394.51192270501053
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Z790 Taichi Carrara EATX LGA1700 Motherboard",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "Intel Z790",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "White / Black",
+          "rank": 79,
+          "ml_score": 438.911039592565
+        }
+      },
+      "cooler": {
+        "name": "iBuypower AW4 65 CFM Liquid CPU Cooler",
+        "price": "$99.00",
+        "price_inr": "\u20b98250.00",
+        "details": {
+          "color": "Black",
+          "noise_level": "38 dB",
+          "rank": 235,
+          "ml_score": 106.25499117498437
+        }
+      },
+      "memory": {
+        "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+        "price": "$153.99",
+        "price_inr": "\u20b912832.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR5-4800",
+          "rank": 51,
+          "ml_score": 258.40807219698695
+        }
+      },
+      "gpu": {
+        "name": "MSI DUKE OC GeForce GTX 1080 Ti 11 GB Video Card",
+        "price": "$679.00",
+        "price_inr": "\u20b956583.33",
+        "details": {
+          "chipset": "GeForce GTX 1080 Ti",
+          "core_clock": "1531 MHz",
+          "boost_clock": "1645 MHz",
+          "color": "Black",
+          "memory": "11 GB",
+          "interface": "PCIe x16",
+          "rank": 156,
+          "ml_score": 1023.5356275937366
+        }
+      },
+      "case": {
+        "name": "Cooler Master QUBE 500 Flatpack ATX Mid Tower Case",
+        "price": "$80.98",
+        "price_inr": "\u20b96748.33",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 226,
+          "ml_score": 142.35273085870213
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1712.43",
+    "total_cost_inr": "\u20b9142702.50",
+    "budget_inr": "\u20b9170000.00",
+    "budget_usd": "$2040.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b927297.50",
+    "build_id": "10a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "11a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-14700F 2.1 GHz 20-Core Processor",
+        "price": "$309.99",
+        "price_inr": "\u20b925832.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 20,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 66,
+          "ml_score": 394.51192270501053
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Z790 Taichi Carrara EATX LGA1700 Motherboard",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "Intel Z790",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "White / Black",
+          "rank": 79,
+          "ml_score": 438.911039592565
+        }
+      },
+      "cooler": {
+        "name": "iBuypower AW4 65 CFM Liquid CPU Cooler",
+        "price": "$99.00",
+        "price_inr": "\u20b98250.00",
+        "details": {
+          "color": "Black",
+          "noise_level": "38 dB",
+          "rank": 235,
+          "ml_score": 106.25499117498437
+        }
+      },
+      "memory": {
+        "name": "Crucial CT2K32G48C40U5 64 GB (2 x 32 GB) DDR5-4800 CL40 Memory",
+        "price": "$153.99",
+        "price_inr": "\u20b912832.50",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR5-4800",
+          "rank": 51,
+          "ml_score": 258.40807219698695
+        }
+      },
+      "gpu": {
+        "name": "MSI DUKE OC GeForce GTX 1080 Ti 11 GB Video Card",
+        "price": "$679.00",
+        "price_inr": "\u20b956583.33",
+        "details": {
+          "chipset": "GeForce GTX 1080 Ti",
+          "core_clock": "1531 MHz",
+          "boost_clock": "1645 MHz",
+          "color": "Black",
+          "memory": "11 GB",
+          "interface": "PCIe x16",
+          "rank": 156,
+          "ml_score": 1023.5356275937366
+        }
+      },
+      "case": {
+        "name": "Cooler Master QUBE 500 Flatpack ATX Mid Tower Case",
+        "price": "$80.98",
+        "price_inr": "\u20b96748.33",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 226,
+          "ml_score": 142.35273085870213
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1712.43",
+    "total_cost_inr": "\u20b9142702.50",
+    "budget_inr": "\u20b9180000.00",
+    "budget_usd": "$2160.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b937297.50",
+    "build_id": "11a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "12a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-14700F 2.1 GHz 20-Core Processor",
+        "price": "$309.99",
+        "price_inr": "\u20b925832.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 20,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 66,
+          "ml_score": 394.51192270501053
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Z790 Taichi Carrara EATX LGA1700 Motherboard",
+        "price": "$299.99",
+        "price_inr": "\u20b924999.17",
+        "details": {
+          "chipset": "Intel Z790",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "White / Black",
+          "rank": 79,
+          "ml_score": 438.911039592565
+        }
+      },
+      "cooler": {
+        "name": "Corsair iCUE LINK H100i RGB 63.1 CFM Liquid CPU Cooler",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "color": "Black",
+          "rank": 212,
+          "ml_score": 118.19141423909662
+        }
+      },
+      "memory": {
+        "name": "G.Skill Ripjaws S5 96 GB (2 x 48 GB) DDR5-6400 CL32 Memory",
+        "price": "$269.99",
+        "price_inr": "\u20b922499.17",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 48GB",
+          "speed": "DDR5-6400",
+          "rank": 45,
+          "ml_score": 303.23084378802315
+        }
+      },
+      "gpu": {
+        "name": "MSI DUKE OC GeForce GTX 1080 Ti 11 GB Video Card",
+        "price": "$679.00",
+        "price_inr": "\u20b956583.33",
+        "details": {
+          "chipset": "GeForce GTX 1080 Ti",
+          "core_clock": "1531 MHz",
+          "boost_clock": "1645 MHz",
+          "color": "Black",
+          "memory": "11 GB",
+          "interface": "PCIe x16",
+          "rank": 156,
+          "ml_score": 1023.5356275937366
+        }
+      },
+      "case": {
+        "name": "MUSETEX K2 ATX Mid Tower Case",
+        "price": "$99.99",
+        "price_inr": "\u20b98332.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 150,
+          "ml_score": 164.92384373011728
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1858.43",
+    "total_cost_inr": "\u20b9154869.17",
+    "budget_inr": "\u20b9190000.00",
+    "budget_usd": "$2280.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b935130.83",
+    "build_id": "12a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "13a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i7-14700F 2.1 GHz 20-Core Processor",
+        "price": "$309.99",
+        "price_inr": "\u20b925832.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 20,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "5.4 GHz",
+          "rank": 66,
+          "ml_score": 394.51192270501053
+        }
+      },
+      "motherboard": {
+        "name": "Gigabyte Z690 AORUS MASTER EATX LGA1700 Motherboard",
+        "price": "$356.96",
+        "price_inr": "\u20b929746.67",
+        "details": {
+          "chipset": "Intel Z690",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 56,
+          "ml_score": 496.80744323326974
+        }
+      },
+      "cooler": {
+        "name": "BitFenix Cube ARGB 60 CFM Liquid CPU Cooler",
+        "price": "$119.90",
+        "price_inr": "\u20b99991.67",
+        "details": {
+          "color": "Black",
+          "noise_level": "34 dB",
+          "rank": 195,
+          "ml_score": 126.38837957291179
+        }
+      },
+      "memory": {
+        "name": "G.Skill Flare X5 96 GB (2 x 48 GB) DDR5-6000 CL30 Memory",
+        "price": "$284.99",
+        "price_inr": "\u20b923749.17",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 48GB",
+          "speed": "DDR5-6000",
+          "rank": 44,
+          "ml_score": 307.87689917941253
+        }
+      },
+      "gpu": {
+        "name": "XFX Speedster MERC 310 Radeon RX 7900 XT 20 GB Video Card",
+        "price": "$679.99",
+        "price_inr": "\u20b956665.83",
+        "details": {
+          "chipset": "Radeon RX 7900 XT",
+          "core_clock": "2000 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black / Silver",
+          "memory": "20 GB",
+          "interface": "PCIe x16",
+          "rank": 89,
+          "ml_score": 1337.8990718424368
+        }
+      },
+      "case": {
+        "name": "Thermaltake H570 TG ARGB ATX Mid Tower Case",
+        "price": "$119.99",
+        "price_inr": "\u20b99999.17",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "White",
+          "rank": 138,
+          "ml_score": 170.56106044645023
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1961.30",
+    "total_cost_inr": "\u20b9163441.67",
+    "budget_inr": "\u20b9200000.00",
+    "budget_usd": "$2400.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b936558.33",
+    "build_id": "13a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "14a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i9-10940X 3.3 GHz 14-Core Processor",
+        "price": "$755.00",
+        "price_inr": "\u20b962916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 14,
+          "core_clock": "3.3 GHz",
+          "boost_clock": "4.8 GHz",
+          "rank": 17,
+          "ml_score": 808.0816770593933
+        }
+      },
+      "motherboard": {
+        "name": "MSI Creator X299 EATX LGA2066 Motherboard",
+        "price": "$229.99",
+        "price_inr": "\u20b919165.83",
+        "details": {
+          "chipset": "Intel X299",
+          "form_factor": "EATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 19,
+          "ml_score": 828.8147038297618
+        }
+      },
+      "cooler": {
+        "name": "Noctua NH-U12A 60.09 CFM CPU Cooler",
+        "price": "$119.95",
+        "price_inr": "\u20b99995.83",
+        "details": {
+          "color": "Brown",
+          "noise_level": "18.8 - 22.6 dB",
+          "rank": 200,
+          "ml_score": 124.62449490046329
+        }
+      },
+      "memory": {
+        "name": "Kingston HyperX Fury 64 GB (2 x 32 GB) DDR4-3466 CL17 Memory",
+        "price": "$449.00",
+        "price_inr": "\u20b937416.67",
+        "details": {
+          "color": "Black",
+          "modules": "2 x 32GB",
+          "speed": "DDR4-3466",
+          "rank": 17,
+          "ml_score": 477.62888028664696
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "BGears b-Voguish ATX Mid Tower Case",
+        "price": "$61.99",
+        "price_inr": "\u20b95165.83",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 432,
+          "ml_score": 96.24745247072129
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2155.40",
+    "total_cost_inr": "\u20b9179616.67",
+    "budget_inr": "\u20b9210000.00",
+    "budget_usd": "$2520.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b930383.33",
+    "build_id": "14a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "15a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 9 7950X 4.5 GHz 16-Core Processor",
+        "price": "$480.98",
+        "price_inr": "\u20b940081.67",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 16,
+          "core_clock": "4.5 GHz",
+          "boost_clock": "5.7 GHz",
+          "rank": 42,
+          "ml_score": 548.07999677459
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Phantom Gaming X870E Nova WiFi ATX AM5 Motherboard",
+        "price": "$349.99",
+        "price_inr": "\u20b929165.83",
+        "details": {
+          "chipset": "AMD X870E",
+          "form_factor": "ATX",
+          "memory_type": "DDR5",
+          "color": "Black / Purple",
+          "rank": 88,
+          "ml_score": 419.3770846994512
+        }
+      },
+      "cooler": {
+        "name": "be quiet! Pure Loop 2 Liquid CPU Cooler",
+        "price": "$127.90",
+        "price_inr": "\u20b910658.33",
+        "details": {
+          "color": "Black",
+          "noise_level": "17.2 - 36.8 dB",
+          "rank": 160,
+          "ml_score": 138.48015905699657
+        }
+      },
+      "memory": {
+        "name": "Corsair Vengeance RGB 96 GB (4 x 24 GB) DDR5-6000 CL40 Memory",
+        "price": "$292.99",
+        "price_inr": "\u20b924415.83",
+        "details": {
+          "color": "Black",
+          "modules": "4 x 24GB",
+          "speed": "DDR5-6000",
+          "rank": 40,
+          "ml_score": 326.3394370779838
+        }
+      },
+      "gpu": {
+        "name": "XFX Speedster MERC 310 Radeon RX 7900 XT 20 GB Video Card",
+        "price": "$679.99",
+        "price_inr": "\u20b956665.83",
+        "details": {
+          "chipset": "Radeon RX 7900 XT",
+          "core_clock": "2000 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black / Silver",
+          "memory": "20 GB",
+          "interface": "PCIe x16",
+          "rank": 89,
+          "ml_score": 1337.8990718424368
+        }
+      },
+      "case": {
+        "name": "MUSETEX K2 ATX Mid Tower Case",
+        "price": "$99.99",
+        "price_inr": "\u20b98332.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 150,
+          "ml_score": 164.92384373011728
+        }
+      },
+      "psu": {
+        "name": "EVGA 1000 GQ 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$149.88",
+        "price_inr": "\u20b912490.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 57,
+          "ml_score": 242.79113580563438
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2191.22",
+    "total_cost_inr": "\u20b9182601.67",
+    "budget_inr": "\u20b9220000.00",
+    "budget_usd": "$2640.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b937398.33",
+    "build_id": "15a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "16a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Threadripper 2970WX 3 GHz 24-Core Processor",
+        "price": "$798.88",
+        "price_inr": "\u20b966573.33",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 24,
+          "core_clock": "3 GHz",
+          "boost_clock": "4.2 GHz",
+          "rank": 18,
+          "ml_score": 803.9586990878803
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X399 Phantom Gaming 6 ATX sTR4 Motherboard",
+        "price": "$248.00",
+        "price_inr": "\u20b920666.67",
+        "details": {
+          "chipset": "AMD X399",
+          "form_factor": "ATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 209,
+          "ml_score": 227.88015541143855
+        }
+      },
+      "cooler": {
+        "name": "Cooler Master MASTERLIQUID PL240 FLUX 72.37 CFM Liquid CPU Cooler",
+        "price": "$136.12",
+        "price_inr": "\u20b911343.33",
+        "details": {
+          "color": "White",
+          "noise_level": "32 dB",
+          "rank": 150,
+          "ml_score": 148.98924151025705
+        }
+      },
+      "memory": {
+        "name": "G.Skill Ripjaws V 128 GB (4 x 32 GB) DDR4-2666 CL18 Memory",
+        "price": "$209.99",
+        "price_inr": "\u20b917499.17",
+        "details": {
+          "color": "Black",
+          "modules": "4 x 32GB",
+          "speed": "DDR4-2666",
+          "rank": 26,
+          "ml_score": 373.8669445464617
+        }
+      },
+      "gpu": {
+        "name": "AMD FirePro W9100 FirePro W9100 16 GB Video Card",
+        "price": "$496.96",
+        "price_inr": "\u20b941413.33",
+        "details": {
+          "chipset": "FirePro W9100",
+          "core_clock": "930 MHz",
+          "color": "Black / Red",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 312,
+          "ml_score": 581.1209579027578
+        }
+      },
+      "case": {
+        "name": "Zalman T6 ATX Mid Tower Case",
+        "price": "$49.99",
+        "price_inr": "\u20b94165.83",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 473,
+          "ml_score": 83.07884044696016
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2029.42",
+    "total_cost_inr": "\u20b9169118.33",
+    "budget_inr": "\u20b9230000.00",
+    "budget_usd": "$2760.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b960881.67",
+    "build_id": "16a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "17a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 9 7950X3D 4.2 GHz 16-Core Processor",
+        "price": "$699.00",
+        "price_inr": "\u20b958250.00",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 16,
+          "core_clock": "4.2 GHz",
+          "boost_clock": "5.7 GHz",
+          "rank": 26,
+          "ml_score": 714.9935753126002
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Phantom Gaming X870E Nova WiFi ATX AM5 Motherboard",
+        "price": "$349.99",
+        "price_inr": "\u20b929165.83",
+        "details": {
+          "chipset": "AMD X870E",
+          "form_factor": "ATX",
+          "memory_type": "DDR5",
+          "color": "Black / Purple",
+          "rank": 88,
+          "ml_score": 419.3770846994512
+        }
+      },
+      "cooler": {
+        "name": "be quiet! Pure Loop 2 FX Liquid CPU Cooler",
+        "price": "$139.90",
+        "price_inr": "\u20b911658.33",
+        "details": {
+          "color": "Black",
+          "noise_level": "10.8 - 32.8 dB",
+          "rank": 141,
+          "ml_score": 152.293899794386
+        }
+      },
+      "memory": {
+        "name": "G.Skill Trident Z5 Royal Neo RGB 96 GB (2 x 48 GB) DDR5-6000 CL28 Memory",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "color": "Gold",
+          "modules": "2 x 48GB",
+          "speed": "DDR5-6000",
+          "rank": 19,
+          "ml_score": 418.5557681489378
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2226.32",
+    "total_cost_inr": "\u20b9185526.67",
+    "budget_inr": "\u20b9240000.00",
+    "budget_usd": "$2880.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b954473.33",
+    "build_id": "17a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "18a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Threadripper 2970WX 3 GHz 24-Core Processor",
+        "price": "$798.88",
+        "price_inr": "\u20b966573.33",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 24,
+          "core_clock": "3 GHz",
+          "boost_clock": "4.2 GHz",
+          "rank": 18,
+          "ml_score": 803.9586990878803
+        }
+      },
+      "motherboard": {
+        "name": "ASRock Fatal1ty X399 Professional Gaming ATX sTR4 Motherboard",
+        "price": "$370.00",
+        "price_inr": "\u20b930833.33",
+        "details": {
+          "chipset": "AMD X399",
+          "form_factor": "ATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 76,
+          "ml_score": 451.4663853365031
+        }
+      },
+      "cooler": {
+        "name": "NZXT Kraken X73 73.11 CFM Liquid CPU Cooler",
+        "price": "$147.98",
+        "price_inr": "\u20b912331.67",
+        "details": {
+          "color": "Black",
+          "noise_level": "21 - 36 dB",
+          "rank": 142,
+          "ml_score": 151.5522787941865
+        }
+      },
+      "memory": {
+        "name": "Corsair Vengeance LPX 256 GB (8 x 32 GB) DDR4-3200 CL16 Memory",
+        "price": "$538.99",
+        "price_inr": "\u20b944915.83",
+        "details": {
+          "color": "Black / Yellow",
+          "modules": "8 x 32GB",
+          "speed": "DDR4-3200",
+          "rank": 14,
+          "ml_score": 542.4675547604315
+        }
+      },
+      "gpu": {
+        "name": "AMD FirePro W9100 FirePro W9100 16 GB Video Card",
+        "price": "$496.96",
+        "price_inr": "\u20b941413.33",
+        "details": {
+          "chipset": "FirePro W9100",
+          "core_clock": "930 MHz",
+          "color": "Black / Red",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 312,
+          "ml_score": 581.1209579027578
+        }
+      },
+      "case": {
+        "name": "Cougar MX330-X ATX Mid Tower Case",
+        "price": "$55.46",
+        "price_inr": "\u20b94621.67",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 424,
+          "ml_score": 98.14193628418532
+        }
+      },
+      "psu": {
+        "name": "EVGA 1000 GQ 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$149.88",
+        "price_inr": "\u20b912490.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 57,
+          "ml_score": 242.79113580563438
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2567.65",
+    "total_cost_inr": "\u20b9213970.83",
+    "budget_inr": "\u20b9250000.00",
+    "budget_usd": "$3000.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b936029.17",
+    "build_id": "18a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "19a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i9-9900K 3.6 GHz 8-Core OEM/Tray Processor",
+        "price": "$954.81",
+        "price_inr": "\u20b979567.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 8,
+          "core_clock": "3.6 GHz",
+          "boost_clock": "5 GHz",
+          "rank": 14,
+          "ml_score": 848.3619056271905
+        }
+      },
+      "motherboard": {
+        "name": "MSI Z270I GAMING PRO CARBON AC Mini ITX LGA1151 Motherboard",
+        "price": "$404.99",
+        "price_inr": "\u20b933749.17",
+        "details": {
+          "chipset": "Intel Z270",
+          "form_factor": "Mini ITX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 68,
+          "ml_score": 466.9796103997108
+        }
+      },
+      "cooler": {
+        "name": "Asus ROG STRIX LC II ARGB 80.95 CFM Liquid CPU Cooler",
+        "price": "$154.99",
+        "price_inr": "\u20b912915.83",
+        "details": {
+          "color": "White / Black",
+          "noise_level": "37.6 dB",
+          "rank": 137,
+          "ml_score": 153.8961597378868
+        }
+      },
+      "memory": {
+        "name": "Corsair Vengeance LPX 256 GB (8 x 32 GB) DDR4-3200 CL16 Memory",
+        "price": "$538.99",
+        "price_inr": "\u20b944915.83",
+        "details": {
+          "color": "Black / Yellow",
+          "modules": "8 x 32GB",
+          "speed": "DDR4-3200",
+          "rank": 14,
+          "ml_score": 542.4675547604315
+        }
+      },
+      "gpu": {
+        "name": "PNY VERTO GeForce RTX 4060 Ti 16 GB Video Card",
+        "price": "$449.99",
+        "price_inr": "\u20b937499.17",
+        "details": {
+          "chipset": "GeForce RTX 4060 Ti",
+          "core_clock": "2310 MHz",
+          "boost_clock": "2535 MHz",
+          "color": "Black",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 173,
+          "ml_score": 948.3152036448942
+        }
+      },
+      "case": {
+        "name": "GameMax F36 MicroATX Mini Tower Case",
+        "price": "$44.17",
+        "price_inr": "\u20b93680.83",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 491,
+          "ml_score": 80.26107853315403
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2637.42",
+    "total_cost_inr": "\u20b9219785.00",
+    "budget_inr": "\u20b9260000.00",
+    "budget_usd": "$3120.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b940215.00",
+    "build_id": "19a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "20a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i9-10980XE 3 GHz 18-Core Processor",
+        "price": "$855.00",
+        "price_inr": "\u20b971250.00",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 18,
+          "core_clock": "3 GHz",
+          "boost_clock": "4.8 GHz",
+          "rank": 15,
+          "ml_score": 840.5533911411002
+        }
+      },
+      "motherboard": {
+        "name": "MSI Creator X299 EATX LGA2066 Motherboard",
+        "price": "$229.99",
+        "price_inr": "\u20b919165.83",
+        "details": {
+          "chipset": "Intel X299",
+          "form_factor": "EATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 19,
+          "ml_score": 828.8147038297618
+        }
+      },
+      "cooler": {
+        "name": "NZXT Kraken X53 RGB 52.44 CFM Liquid CPU Cooler",
+        "price": "$159.99",
+        "price_inr": "\u20b913332.50",
+        "details": {
+          "color": "White / Black",
+          "noise_level": "22 - 33 dB",
+          "rank": 123,
+          "ml_score": 160.18369358445554
+        }
+      },
+      "memory": {
+        "name": "Corsair Vengeance RGB Pro 256 GB (8 x 32 GB) DDR4-3200 CL16 Memory",
+        "price": "$602.99",
+        "price_inr": "\u20b950249.17",
+        "details": {
+          "color": "Black",
+          "modules": "8 x 32GB",
+          "speed": "DDR4-3200",
+          "rank": 12,
+          "ml_score": 572.454111775302
+        }
+      },
+      "gpu": {
+        "name": "MSI DUKE OC GeForce GTX 1080 Ti 11 GB Video Card",
+        "price": "$679.00",
+        "price_inr": "\u20b956583.33",
+        "details": {
+          "chipset": "GeForce GTX 1080 Ti",
+          "core_clock": "1531 MHz",
+          "boost_clock": "1645 MHz",
+          "color": "Black",
+          "memory": "11 GB",
+          "interface": "PCIe x16",
+          "rank": 156,
+          "ml_score": 1023.5356275937366
+        }
+      },
+      "case": {
+        "name": "BGears b-Vortex-RGB ATX Mid Tower Case",
+        "price": "$55.99",
+        "price_inr": "\u20b94665.83",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 448,
+          "ml_score": 90.60739142449098
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2672.44",
+    "total_cost_inr": "\u20b9222703.33",
+    "budget_inr": "\u20b9270000.00",
+    "budget_usd": "$3240.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b947296.67",
+    "build_id": "20a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "21a": {
+    "components": {
+      "cpu": {
+        "name": "Intel Xeon E5-2620 V4 2.1 GHz 8-Core Processor",
+        "price": "$1029.00",
+        "price_inr": "\u20b985750.00",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 8,
+          "core_clock": "2.1 GHz",
+          "boost_clock": "3 GHz",
+          "rank": 16,
+          "ml_score": 811.0786019876949
+        }
+      },
+      "motherboard": {
+        "name": "ASRock FM2A68M-DG3+ Micro ATX FM2+ Motherboard",
+        "price": "$49.99",
+        "price_inr": "\u20b94165.83",
+        "details": {
+          "manufacturer": "ASRock",
+          "chipset": "AMD A68H",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR3",
+          "color": "Brown / Black",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "NZXT Kraken X63 RGB 91.19 CFM Liquid CPU Cooler",
+        "price": "$166.99",
+        "price_inr": "\u20b913915.83",
+        "details": {
+          "color": "White / Black",
+          "noise_level": "22 - 33 dB",
+          "rank": 121,
+          "ml_score": 161.98400296093882
+        }
+      },
+      "memory": {
+        "name": "Kingston ValueRAM 1 GB (1 x 1 GB) DDR3-1333 CL9 Memory",
+        "price": "$24.90",
+        "price_inr": "\u20b92075.00",
+        "details": {
+          "color": "Green",
+          "modules": "1 x 1GB",
+          "speed": "DDR3-1333",
+          "rank": 20,
+          "ml_score": 416.1997384458284
+        }
+      },
+      "gpu": {
+        "name": "AMD FirePro W9100 FirePro W9100 16 GB Video Card",
+        "price": "$496.96",
+        "price_inr": "\u20b941413.33",
+        "details": {
+          "chipset": "FirePro W9100",
+          "core_clock": "930 MHz",
+          "color": "Black / Red",
+          "memory": "16 GB",
+          "interface": "PCIe x16",
+          "rank": 312,
+          "ml_score": 581.1209579027578
+        }
+      },
+      "case": {
+        "name": "Vetroo M05 MicroATX Mid Tower Case",
+        "price": "$49.99",
+        "price_inr": "\u20b94165.83",
+        "details": {
+          "type": "MicroATX Mid Tower",
+          "color": "White",
+          "rank": 398,
+          "ml_score": 103.45903019377661
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$1907.31",
+    "total_cost_inr": "\u20b9158942.50",
+    "budget_inr": "\u20b9280000.00",
+    "budget_usd": "$3360.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9121057.50",
+    "build_id": "21a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "22a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 9 9950X 4.3 GHz 16-Core Processor",
+        "price": "$546.38",
+        "price_inr": "\u20b945531.67",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 16,
+          "core_clock": "4.3 GHz",
+          "boost_clock": "5.7 GHz",
+          "rank": 39,
+          "ml_score": 570.769405350439
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X670E Taichi EATX AM5 Motherboard",
+        "price": "$397.99",
+        "price_inr": "\u20b933165.83",
+        "details": {
+          "chipset": "AMD X670E",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 41,
+          "ml_score": 539.2831929099597
+        }
+      },
+      "cooler": {
+        "name": "MSI MAG CORELIQUID A13 62.6 CFM Liquid CPU Cooler",
+        "price": "$149.10",
+        "price_inr": "\u20b912425.00",
+        "details": {
+          "color": "Black",
+          "rank": 114,
+          "ml_score": 170.08792843374255
+        }
+      },
+      "memory": {
+        "name": "Kingston FURY Beast 128 GB (4 x 32 GB) DDR5-5600 CL40 Memory",
+        "price": "$400.00",
+        "price_inr": "\u20b933333.33",
+        "details": {
+          "color": "White",
+          "modules": "4 x 32GB",
+          "speed": "DDR5-5600",
+          "rank": 25,
+          "ml_score": 388.6417212328743
+        }
+      },
+      "gpu": {
+        "name": "Sapphire PULSE Radeon RX 7900 XTX 24 GB Video Card",
+        "price": "$1029.98",
+        "price_inr": "\u20b985831.67",
+        "details": {
+          "chipset": "Radeon RX 7900 XTX",
+          "core_clock": "2300 MHz",
+          "boost_clock": "2525 MHz",
+          "color": "Black / Red",
+          "memory": "24 GB",
+          "interface": "PCIe x16",
+          "rank": 67,
+          "ml_score": 1635.7294903639859
+        }
+      },
+      "case": {
+        "name": "NZXT H5 Flow Starfield ATX Mid Tower Case",
+        "price": "$129.99",
+        "price_inr": "\u20b910832.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "White / Blue",
+          "rank": 130,
+          "ml_score": 172.41918599069277
+        }
+      },
+      "psu": {
+        "name": "EVGA 1000 GQ 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$149.88",
+        "price_inr": "\u20b912490.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 57,
+          "ml_score": 242.79113580563438
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2812.82",
+    "total_cost_inr": "\u20b9234401.67",
+    "budget_inr": "\u20b9290000.00",
+    "budget_usd": "$3480.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b955598.33",
+    "build_id": "22a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  },
+  "23a": {
+    "components": {
+      "cpu": {
+        "name": "AMD Ryzen 9 7950X3D 4.2 GHz 16-Core Processor",
+        "price": "$699.00",
+        "price_inr": "\u20b958250.00",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 16,
+          "core_clock": "4.2 GHz",
+          "boost_clock": "5.7 GHz",
+          "rank": 26,
+          "ml_score": 714.9935753126002
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X670E Taichi EATX AM5 Motherboard",
+        "price": "$397.99",
+        "price_inr": "\u20b933165.83",
+        "details": {
+          "chipset": "AMD X670E",
+          "form_factor": "EATX",
+          "memory_type": "DDR5",
+          "color": "Black",
+          "rank": 41,
+          "ml_score": 539.2831929099597
+        }
+      },
+      "cooler": {
+        "name": "Fractal Design Lumen S36 V2 56 CFM Liquid CPU Cooler",
+        "price": "$175.31",
+        "price_inr": "\u20b914609.17",
+        "details": {
+          "color": "Black",
+          "noise_level": "10 - 33.2 dB",
+          "rank": 87,
+          "ml_score": 205.23093475317052
+        }
+      },
+      "memory": {
+        "name": "Corsair Vengeance 192 GB (4 x 48 GB) DDR5-5200 CL38 Memory",
+        "price": "$582.01",
+        "price_inr": "\u20b948500.83",
+        "details": {
+          "color": "Black",
+          "modules": "4 x 48GB",
+          "speed": "DDR5-5200",
+          "rank": 11,
+          "ml_score": 579.3711341686371
+        }
+      },
+      "gpu": {
+        "name": "MSI DUKE OC GeForce GTX 1080 Ti 11 GB Video Card",
+        "price": "$679.00",
+        "price_inr": "\u20b956583.33",
+        "details": {
+          "chipset": "GeForce GTX 1080 Ti",
+          "core_clock": "1531 MHz",
+          "boost_clock": "1645 MHz",
+          "color": "Black",
+          "memory": "11 GB",
+          "interface": "PCIe x16",
+          "rank": 156,
+          "ml_score": 1023.5356275937366
+        }
+      },
+      "case": {
+        "name": "BGears b-Voguish ATX Mid Tower Case",
+        "price": "$61.99",
+        "price_inr": "\u20b95165.83",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 432,
+          "ml_score": 96.24745247072129
+        }
+      },
+      "psu": {
+        "name": "Apevia Galaxy 1000 W 80+ Gold Certified Semi-modular ATX Power Supply",
+        "price": "$79.98",
+        "price_inr": "\u20b96665.00",
+        "details": {
+          "type": "ATX",
+          "wattage": 1000,
+          "efficiency": "80+ Gold",
+          "rank": 68,
+          "ml_score": 229.19487517810367
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$2684.78",
+    "total_cost_inr": "\u20b9223731.67",
+    "budget_inr": "\u20b9300000.00",
+    "budget_usd": "$3600.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b976268.33",
+    "build_id": "23a",
+    "test_config": {
+      "test_id": "A",
+      "ml_ranking": true,
+      "dynamic_budget": true
+    }
+  }
+}

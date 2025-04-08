@@ -1,0 +1,2803 @@
+{
+  "1b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "Asus Prime B450M-A II Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD B450",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "rank": 304,
+          "ml_score": 134.41151073443328
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$369.34",
+    "total_cost_inr": "\u20b930778.33",
+    "budget_inr": "\u20b980000.00",
+    "budget_usd": "$960.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b949221.67",
+    "build_id": "1b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "2b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$339.34",
+    "total_cost_inr": "\u20b928278.33",
+    "budget_inr": "\u20b990000.00",
+    "budget_usd": "$1080.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b961721.67",
+    "build_id": "2b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "3b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$339.34",
+    "total_cost_inr": "\u20b928278.33",
+    "budget_inr": "\u20b9100000.00",
+    "budget_usd": "$1200.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b971721.67",
+    "build_id": "3b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "4b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9110000.00",
+    "budget_usd": "$1320.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b978834.17",
+    "build_id": "4b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "5b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$339.34",
+    "total_cost_inr": "\u20b928278.33",
+    "budget_inr": "\u20b9120000.00",
+    "budget_usd": "$1440.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b991721.67",
+    "build_id": "5b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "6b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9130000.00",
+    "budget_usd": "$1560.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b998834.17",
+    "build_id": "6b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "7b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$339.34",
+    "total_cost_inr": "\u20b928278.33",
+    "budget_inr": "\u20b9140000.00",
+    "budget_usd": "$1680.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9111721.67",
+    "build_id": "7b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "8b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$343.99",
+    "total_cost_inr": "\u20b928665.83",
+    "budget_inr": "\u20b9150000.00",
+    "budget_usd": "$1800.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9121334.17",
+    "build_id": "8b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "9b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$369.34",
+    "total_cost_inr": "\u20b930778.33",
+    "budget_inr": "\u20b9160000.00",
+    "budget_usd": "$1920.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9129221.67",
+    "build_id": "9b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "10b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9170000.00",
+    "budget_usd": "$2040.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9138834.17",
+    "build_id": "10b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "11b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9180000.00",
+    "budget_usd": "$2160.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9148834.17",
+    "build_id": "11b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "12b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9190000.00",
+    "budget_usd": "$2280.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9158834.17",
+    "build_id": "12b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "13b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$343.99",
+    "total_cost_inr": "\u20b928665.83",
+    "budget_inr": "\u20b9200000.00",
+    "budget_usd": "$2400.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9171334.17",
+    "build_id": "13b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "14b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$343.99",
+    "total_cost_inr": "\u20b928665.83",
+    "budget_inr": "\u20b9210000.00",
+    "budget_usd": "$2520.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9181334.17",
+    "build_id": "14b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "15b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$339.34",
+    "total_cost_inr": "\u20b928278.33",
+    "budget_inr": "\u20b9220000.00",
+    "budget_usd": "$2640.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9191721.67",
+    "build_id": "15b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "16b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Threadripper 2920X 3.5 GHz 12-Core Processor",
+        "price": "$225.10",
+        "price_inr": "\u20b918758.33",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 12,
+          "core_clock": "3.5 GHz",
+          "boost_clock": "4.3 GHz",
+          "rank": 144,
+          "ml_score": 262.356374474097
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X399 Phantom Gaming 6 ATX sTR4 Motherboard",
+        "price": "$248.00",
+        "price_inr": "\u20b920666.67",
+        "details": {
+          "chipset": "AMD X399",
+          "form_factor": "ATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 209,
+          "ml_score": 227.88015541143855
+        }
+      },
+      "cooler": {
+        "name": "Iceberg Thermal IceSLEET X9 Dual TR 96 CFM CPU Cooler",
+        "price": "$42.99",
+        "price_inr": "\u20b93582.50",
+        "details": {
+          "color": "Teal / Silver",
+          "noise_level": "0 - 38 dB",
+          "rank": 340,
+          "ml_score": 55.819746777732
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "PNY VCQP400-PB Quadro P400 2 GB Video Card",
+        "price": "$47.04",
+        "price_inr": "\u20b93920.00",
+        "details": {
+          "chipset": "Quadro P400",
+          "core_clock": "1070 MHz",
+          "boost_clock": "1170 MHz",
+          "color": "Black",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 491,
+          "ml_score": 154.93951338322873
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "Logisys PS480D 480 W ATX Power Supply",
+        "price": "$27.99",
+        "price_inr": "\u20b92332.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 480,
+          "rank": 203,
+          "ml_score": 77.60094741487741
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$653.59",
+    "total_cost_inr": "\u20b954465.83",
+    "budget_inr": "\u20b9230000.00",
+    "budget_usd": "$2760.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9175534.17",
+    "build_id": "16b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "17b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$369.34",
+    "total_cost_inr": "\u20b930778.33",
+    "budget_inr": "\u20b9240000.00",
+    "budget_usd": "$2880.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9209221.67",
+    "build_id": "17b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "18b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Threadripper 2920X 3.5 GHz 12-Core Processor",
+        "price": "$225.10",
+        "price_inr": "\u20b918758.33",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 12,
+          "core_clock": "3.5 GHz",
+          "boost_clock": "4.3 GHz",
+          "rank": 144,
+          "ml_score": 262.356374474097
+        }
+      },
+      "motherboard": {
+        "name": "ASRock X399 Phantom Gaming 6 ATX sTR4 Motherboard",
+        "price": "$248.00",
+        "price_inr": "\u20b920666.67",
+        "details": {
+          "chipset": "AMD X399",
+          "form_factor": "ATX",
+          "memory_type": "DDR4",
+          "color": "Black / Silver",
+          "rank": 209,
+          "ml_score": 227.88015541143855
+        }
+      },
+      "cooler": {
+        "name": "Iceberg Thermal IceSLEET X9 Dual TR 96 CFM CPU Cooler",
+        "price": "$42.99",
+        "price_inr": "\u20b93582.50",
+        "details": {
+          "color": "Teal / Silver",
+          "noise_level": "0 - 38 dB",
+          "rank": 340,
+          "ml_score": 55.819746777732
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "AMD 100-506001 Radeon Pro WX 2100 2 GB Video Card",
+        "price": "$74.98",
+        "price_inr": "\u20b96248.33",
+        "details": {
+          "chipset": "Radeon Pro WX 2100",
+          "core_clock": "925 MHz",
+          "boost_clock": "1219 MHz",
+          "color": "Blue",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 492,
+          "ml_score": 145.5039382956576
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "Logisys PS480D 480 W ATX Power Supply",
+        "price": "$27.99",
+        "price_inr": "\u20b92332.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 480,
+          "rank": 203,
+          "ml_score": 77.60094741487741
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$681.53",
+    "total_cost_inr": "\u20b956794.17",
+    "budget_inr": "\u20b9250000.00",
+    "budget_usd": "$3000.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9193205.83",
+    "build_id": "18b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "19b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9260000.00",
+    "budget_usd": "$3120.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9228834.17",
+    "build_id": "19b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "20b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$373.99",
+    "total_cost_inr": "\u20b931165.83",
+    "budget_inr": "\u20b9270000.00",
+    "budget_usd": "$3240.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9238834.17",
+    "build_id": "20b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "21b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Xeon E5-2620 2 GHz 6-Core OEM/Tray Processor",
+        "price": "$36.75",
+        "price_inr": "\u20b93062.50",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 6,
+          "core_clock": "2 GHz",
+          "rank": 354,
+          "ml_score": 100.24351422474389
+        }
+      },
+      "motherboard": {
+        "name": "Supermicro X9SRI-F-O ATX LGA2011 Motherboard",
+        "price": "$545.49",
+        "price_inr": "\u20b945457.50",
+        "details": {
+          "chipset": "Intel C602",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Green",
+          "rank": 8,
+          "ml_score": 1002.1950801371876
+        }
+      },
+      "cooler": {
+        "name": "Cooler Master Hyper H412R 34.1 CFM CPU Cooler",
+        "price": "$22.99",
+        "price_inr": "\u20b91915.83",
+        "details": {
+          "color": "Black",
+          "noise_level": "29.4 dB",
+          "rank": 424,
+          "ml_score": 34.284242089592645
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "AMD 100-506001 Radeon Pro WX 2100 2 GB Video Card",
+        "price": "$74.98",
+        "price_inr": "\u20b96248.33",
+        "details": {
+          "chipset": "Radeon Pro WX 2100",
+          "core_clock": "925 MHz",
+          "boost_clock": "1219 MHz",
+          "color": "Blue",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 492,
+          "ml_score": 145.5039382956576
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$771.44",
+    "total_cost_inr": "\u20b964286.67",
+    "budget_inr": "\u20b9280000.00",
+    "budget_usd": "$3360.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9215713.33",
+    "build_id": "21b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "22b": {
+    "components": {
+      "cpu": {
+        "name": "Intel Core i3-4150 3.5 GHz Dual-Core Processor",
+        "price": "$35.00",
+        "price_inr": "\u20b92916.67",
+        "details": {
+          "manufacturer": "Intel",
+          "core_count": 2,
+          "core_clock": "3.5 GHz",
+          "rank": 403,
+          "ml_score": 54.010886507393906
+        }
+      },
+      "motherboard": {
+        "name": "ASRock H81 Pro BTC ATX LGA1150 Motherboard",
+        "price": "$94.99",
+        "price_inr": "\u20b97915.83",
+        "details": {
+          "chipset": "Intel H81",
+          "form_factor": "ATX",
+          "memory_type": "DDR3",
+          "color": "Black / Silver",
+          "rank": 310,
+          "ml_score": 128.52023219571592
+        }
+      },
+      "cooler": {
+        "name": "Thermaltake Gravity i2 31.34 CFM CPU Cooler",
+        "price": "$12.78",
+        "price_inr": "\u20b91065.00",
+        "details": {
+          "noise_level": "21.3 dB",
+          "rank": 422,
+          "ml_score": 34.78614089058043
+        }
+      },
+      "memory": {
+        "name": "Patriot Signature Line 4 GB (1 x 4 GB) DDR3-1600 SODIMM CL11 Memory",
+        "price": "$8.77",
+        "price_inr": "\u20b9730.83",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR3-1600",
+          "rank": 283,
+          "ml_score": 42.55907519021496
+        }
+      },
+      "gpu": {
+        "name": "XFX RX-560D2SFG5 Radeon RX 560 - 896 2 GB Video Card",
+        "price": "$109.99",
+        "price_inr": "\u20b99165.83",
+        "details": {
+          "chipset": "Radeon RX 560 - 896",
+          "core_clock": "1196 MHz",
+          "color": "Black / Red",
+          "memory": "2 GB",
+          "interface": "PCIe x16",
+          "rank": 498,
+          "ml_score": 107.60546145892268
+        }
+      },
+      "case": {
+        "name": "DIYPC DIY-S07 ATX Mid Tower Case",
+        "price": "$47.97",
+        "price_inr": "\u20b93997.50",
+        "details": {
+          "type": "ATX Mid Tower",
+          "color": "Black",
+          "rank": 519,
+          "ml_score": 73.89174475175648
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$343.99",
+    "total_cost_inr": "\u20b928665.83",
+    "budget_inr": "\u20b9290000.00",
+    "budget_usd": "$3480.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9261334.17",
+    "build_id": "22b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  },
+  "23b": {
+    "components": {
+      "cpu": {
+        "name": "AMD Athlon 200GE 3.2 GHz Dual-Core Processor",
+        "price": "$68.09",
+        "price_inr": "\u20b95674.17",
+        "details": {
+          "manufacturer": "AMD",
+          "core_count": 2,
+          "core_clock": "3.2 GHz",
+          "rank": 361,
+          "ml_score": 92.11055331021015
+        }
+      },
+      "motherboard": {
+        "name": "MSI A520M-A PRO Micro ATX AM4 Motherboard",
+        "price": "$69.99",
+        "price_inr": "\u20b95832.50",
+        "details": {
+          "chipset": "AMD A520",
+          "form_factor": "Micro ATX",
+          "memory_type": "DDR4",
+          "color": "Black",
+          "rank": 318,
+          "ml_score": 119.51291640989612
+        }
+      },
+      "cooler": {
+        "name": "ARCTIC Alpine 23 CPU Cooler",
+        "price": "$11.79",
+        "price_inr": "\u20b9982.50",
+        "details": {
+          "color": "White / Black",
+          "rank": 461,
+          "ml_score": 17.777067150468316
+        }
+      },
+      "memory": {
+        "name": "Kingston KCP424SS6/4 4 GB (1 x 4 GB) DDR4-2400 SODIMM CL17 Memory",
+        "price": "$5.00",
+        "price_inr": "\u20b9416.67",
+        "details": {
+          "color": "Green / Black",
+          "modules": "1 x 4GB",
+          "speed": "DDR4-2400",
+          "rank": 318,
+          "ml_score": 15.207541575958668
+        }
+      },
+      "gpu": {
+        "name": "MSI D6 VENTUS XS OCV3 GeForce GTX 1650 G6 4 GB Video Card",
+        "price": "$139.99",
+        "price_inr": "\u20b911665.83",
+        "details": {
+          "chipset": "GeForce GTX 1650 G6",
+          "core_clock": "1410 MHz",
+          "boost_clock": "1620 MHz",
+          "color": "Silver / Black",
+          "memory": "4 GB",
+          "interface": "PCIe x16",
+          "rank": 431,
+          "ml_score": 326.446630744552
+        }
+      },
+      "case": {
+        "name": "Cooler Master MasterBox Q300L MicroATX Mini Tower Case",
+        "price": "$39.99",
+        "price_inr": "\u20b93332.50",
+        "details": {
+          "type": "MicroATX Mini Tower",
+          "color": "Black",
+          "rank": 542,
+          "ml_score": 62.84182119793669
+        }
+      },
+      "psu": {
+        "name": "CoolMax V-400 400 W ATX Power Supply",
+        "price": "$24.99",
+        "price_inr": "\u20b92082.50",
+        "details": {
+          "type": "ATX",
+          "wattage": 400,
+          "rank": 212,
+          "ml_score": 63.40848744017245
+        }
+      },
+      "storage": {
+        "name": "ADATA Ultimate SU650",
+        "price": "9.5",
+        "price_inr": "\u20b9791.67",
+        "details": {
+          "type": "SSD",
+          "capacity": 120,
+          "interface": "M.2 SATA",
+          "rank": 9999,
+          "ml_score": 0
+        }
+      }
+    },
+    "selection_order": [
+      "cpu",
+      "motherboard",
+      "cooler",
+      "memory",
+      "gpu",
+      "case",
+      "psu",
+      "storage"
+    ],
+    "total_cost_usd": "$369.34",
+    "total_cost_inr": "\u20b930778.33",
+    "budget_inr": "\u20b9300000.00",
+    "budget_usd": "$3600.00",
+    "status": "Within budget",
+    "remaining_budget_inr": "\u20b9269221.67",
+    "build_id": "23b",
+    "test_config": {
+      "test_id": "B",
+      "ml_ranking": false,
+      "dynamic_budget": true
+    }
+  }
+}

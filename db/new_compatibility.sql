@@ -337,6 +337,8 @@ DECLARE
     v_mobo_memory_speed text;
     v_cpu_exists boolean;
     v_mobo_exists boolean;
+    v_mobo_ddr_version int;
+    v_mem_ddr_version int;
 BEGIN
     -- Check if CPU exists
     SELECT EXISTS (
@@ -362,6 +364,15 @@ BEGIN
     FROM motherboard_specs ms
     WHERE ms.id = mobo_id;
 
+    -- Extract DDR version from motherboard memory type
+    v_mobo_ddr_version := CASE 
+        WHEN v_mobo_memory_type LIKE '%DDR5%' THEN 5
+        WHEN v_mobo_memory_type LIKE '%DDR4%' THEN 4
+        WHEN v_mobo_memory_type LIKE '%DDR3%' THEN 3
+        WHEN v_mobo_memory_type LIKE '%DDR2%' THEN 2
+        ELSE NULL
+    END;
+
     RETURN QUERY
     SELECT 
         m.id,
@@ -379,16 +390,19 @@ BEGIN
         m.heat_spreader
     FROM memory_specs m
     WHERE 
+        -- Extract DDR version from memory speed
         CASE 
-            WHEN m.speed LIKE 'DDR5%' AND v_mobo_memory_type = 'DDR5' THEN true
-            WHEN m.speed LIKE 'DDR4%' AND v_mobo_memory_type = 'DDR4' THEN true
-            ELSE false
-        END
+            WHEN m.speed LIKE '%DDR5%' THEN 5
+            WHEN m.speed LIKE '%DDR4%' THEN 4
+            WHEN m.speed LIKE '%DDR3%' THEN 3
+            WHEN m.speed LIKE '%DDR2%' THEN 2
+            ELSE NULL
+        END = v_mobo_ddr_version
         AND (
             CASE
                 WHEN v_mobo_memory_speed LIKE '%' || m.speed || '%' THEN true
-                WHEN m.speed ~ 'DDR[45]-([0-9]+)' THEN
-                    v_mobo_memory_speed LIKE '%' || (regexp_match(m.speed, 'DDR[45]-([0-9]+)'))[1] || '%'
+                WHEN m.speed ~ 'DDR[2-5]-([0-9]+)' THEN
+                    v_mobo_memory_speed LIKE '%' || (regexp_match(m.speed, 'DDR[2-5]-([0-9]+)'))[1] || '%'
                 ELSE false
             END
         );

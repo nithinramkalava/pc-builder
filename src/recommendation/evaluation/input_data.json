@@ -1,0 +1,1221 @@
+[
+  {
+    "budget": 80000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 5
+      },
+      "officeWork": {
+        "needed": true,
+        "intensity": 6
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 5,
+      "storage": {
+        "ssdCapacity": "500GB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 7,
+      "gpu": 6,
+      "ram": 5,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 90000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 6
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 4
+      },
+      "officeWork": {
+        "needed": true,
+        "intensity": 5
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": null,
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "500GB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 5,
+      "gpu": 8,
+      "ram": 5,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 100000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 6
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": true,
+        "intensity": 4
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": null,
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 3,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 6,
+      "gpu": 8,
+      "ram": 5,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 110000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 5
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 3
+      },
+      "officeWork": {
+        "needed": true,
+        "intensity": 6
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 5,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 5,
+      "gpu": 8,
+      "ram": 5,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 120000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": true,
+        "intensity": 5
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": null,
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 4,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 7,
+      "gpu": 8,
+      "ram": 5,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 130000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 9
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "Intel",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "1TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 8,
+      "ram": 6,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 140000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 8
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 5
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 5
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": true,
+        "intensity": 7
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "AMD",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "2TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 7,
+      "gpu": 7,
+      "ram": 6,
+      "storageSpeed": 6
+    }
+  },
+  {
+    "budget": 150000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 9
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": true,
+        "intensity": 7
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "AMD",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 7,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "2TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 6,
+      "gpu": 7,
+      "ram": 6,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 160000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 8
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 4
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": true,
+        "intensity": 7
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "1TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 7,
+      "ram": 6,
+      "storageSpeed": 6
+    }
+  },
+  {
+    "budget": 170000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 9
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 5
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 5
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 9,
+      "ram": 7,
+      "storageSpeed": 6
+    }
+  },
+  {
+    "budget": 180000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 5
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "Intel",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 7,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 6,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 8,
+      "ram": 7,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 190000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "Intel",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "1TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 6,
+      "gpu": 8,
+      "ram": 6,
+      "storageSpeed": 6
+    }
+  },
+  {
+    "budget": 200000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "Intel",
+      "gpuPlatform": null,
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "1TB",
+        "hddCapacity": "1TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": false,
+        "usbPorts": "Multiple USB 3.0 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 6,
+      "gpu": 8,
+      "ram": 7,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 210000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 7
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 8
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 9
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": null,
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 7,
+      "noiseLevel": "Performance",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "4TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 6,
+      "ram": 10,
+      "storageSpeed": 9
+    }
+  },
+  {
+    "budget": 220000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 9
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": true,
+        "intensity": 8
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "AMD",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 8,
+      "noiseLevel": "Quiet",
+      "upgradePathImportance": 7,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "2TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 9,
+      "gpu": 9,
+      "ram": 7,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 230000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 9
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 9
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": null,
+      "marketSegment": "Workstation",
+      "formFactor": "Full tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 7,
+      "storage": {
+        "ssdCapacity": "4TB",
+        "hddCapacity": "4TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 7,
+      "ram": 10,
+      "storageSpeed": 8
+    }
+  },
+  {
+    "budget": 240000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 9
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 8
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Full tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "4TB",
+        "hddCapacity": "4TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 8,
+      "ram": 10,
+      "storageSpeed": 8
+    }
+  },
+  {
+    "budget": 250000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 9
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 8
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 8
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "AMD",
+      "marketSegment": "Workstation",
+      "formFactor": "Mid tower",
+      "rgbImportance": 9,
+      "noiseLevel": "Quiet",
+      "upgradePathImportance": 9,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 10,
+      "gpu": 6,
+      "ram": 8,
+      "storageSpeed": 7
+    }
+  },
+  {
+    "budget": 260000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 7
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 9
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Full tower",
+      "rgbImportance": 5,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "4TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 9,
+      "gpu": 7,
+      "ram": 8,
+      "storageSpeed": 9
+    }
+  },
+  {
+    "budget": 270000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 8
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 8
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "Intel",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Performance",
+      "upgradePathImportance": 9,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 10,
+      "gpu": 8,
+      "ram": 10,
+      "storageSpeed": 9
+    }
+  },
+  {
+    "budget": 280000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 7
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 9
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 7
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "AMD",
+      "marketSegment": "Workstation",
+      "formFactor": "Mid tower",
+      "rgbImportance": 7,
+      "noiseLevel": "Balanced",
+      "upgradePathImportance": 7,
+      "storage": {
+        "ssdCapacity": "4TB",
+        "hddCapacity": "4TB"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 6,
+      "ram": 9,
+      "storageSpeed": 8
+    }
+  },
+  {
+    "budget": 290000,
+    "useCases": {
+      "gaming": {
+        "needed": true,
+        "intensity": 10
+      },
+      "videoEditing": {
+        "needed": false,
+        "intensity": 0
+      },
+      "rendering3D": {
+        "needed": false,
+        "intensity": 0
+      },
+      "programming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": true,
+        "intensity": 9
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": null,
+      "gpuPlatform": "AMD",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Quiet",
+      "upgradePathImportance": 9,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 8,
+      "gpu": 9,
+      "ram": 7,
+      "storageSpeed": 5
+    }
+  },
+  {
+    "budget": 300000,
+    "useCases": {
+      "gaming": {
+        "needed": false,
+        "intensity": 0
+      },
+      "videoEditing": {
+        "needed": true,
+        "intensity": 9
+      },
+      "rendering3D": {
+        "needed": true,
+        "intensity": 8
+      },
+      "programming": {
+        "needed": true,
+        "intensity": 8
+      },
+      "officeWork": {
+        "needed": false,
+        "intensity": 0
+      },
+      "streaming": {
+        "needed": false,
+        "intensity": 0
+      }
+    },
+    "technicalPreferences": {
+      "cpuPlatform": "AMD",
+      "gpuPlatform": "NVIDIA",
+      "marketSegment": "Consumer",
+      "formFactor": "Mid tower",
+      "rgbImportance": 6,
+      "noiseLevel": "Quiet",
+      "upgradePathImportance": 8,
+      "storage": {
+        "ssdCapacity": "2TB",
+        "hddCapacity": "None"
+      },
+      "connectivity": {
+        "wifi": true,
+        "bluetooth": true,
+        "usbPorts": "Multiple USB 3.2 and USB-C"
+      }
+    },
+    "performancePriorities": {
+      "cpu": 10,
+      "gpu": 7,
+      "ram": 9,
+      "storageSpeed": 9
+    }
+  }
+]
