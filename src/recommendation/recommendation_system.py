@@ -985,8 +985,7 @@ class PCRecommendationSystem:
         logging.info(f"Starting Storage Selection - Budget: ${budget:.2f}, Mobo ID: {motherboard_id}")
 
         use_direct_query = False
-        compat_function_failed = False
-
+        
         # --- Check Compatibility Function ---
         try:
             check_query = "SELECT COUNT(*) FROM get_compatible_ssd(%s)"
@@ -996,7 +995,6 @@ class PCRecommendationSystem:
             if count == 0:
                  logging.warning("get_compatible_ssd returned 0 results. Trying direct query on ssd_specs.")
                  use_direct_query = True
-                 compat_function_failed = True
                  # Verify ssd_specs table isn't empty
                  check_query_direct = "SELECT COUNT(*) FROM ssd_specs WHERE price_num > 0"
                  self.cursor.execute(check_query_direct)
@@ -1005,95 +1003,190 @@ class PCRecommendationSystem:
         except Exception as check_err:
              logging.warning(f"Storage - Error checking compatibility function ({check_err}). Will use direct query.")
              use_direct_query = True
-             compat_function_failed = True
-
 
         # --- Define Order By Logic (Capacity Desc, Price Asc) ---
-        storage_order_by = """
+        # FIXED: Handling numeric capacities properly
+        capacity_order_by = """
             ORDER BY
+                capacity DESC, 
+                price ASC
+        """
+
+        # --- Define Queries ---
+        # FIXED: Matching the exact columns returned by get_compatible_ssd function
+        if not use_direct_query:
+            base_query = f"""
+                SELECT 
+                    s.id, s.name, s.price, s.capacity, s.price_per_gb, 
+                    s.type, s.cache, s.form_factor, s.interface
+                FROM get_compatible_ssd(%s) s
+                WHERE s.price <= %s AND s.price > 0
+                {capacity_order_by}
+                LIMIT 1
+            """
+            cheapest_query = """
+                SELECT 
+                    s.id, s.name, s.price, s.capacity, s.price_per_gb, 
+                    s.type, s.cache, s.form_factor, s.interface
+                FROM get_compatible_ssd(%s) s
+                WHERE s.price > 0
+                ORDER BY s.capacity DESC, s.price ASC
+                LIMIT 1
+            """
+        else:
+             # Direct queries on ssd_specs
+             base_query = f"""
+                 SELECT 
+                    ss.id, ss.name, ss.price, ss.capacity, ss.price_per_gb, 
+                    ss.type, ss.cache, ss.form_factor, ss.interface
+                 FROM ssd_specs ss
+                 WHERE ss.price_num <= %s AND ss.price_num > 0
+                 ORDER BY 
+                    CASE
+                        WHEN ss.capacity LIKE '%TB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'TB', ''), ' ', '') AS FLOAT) * 1000
+                        WHEN ss.capacity LIKE '%GB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'GB', ''), ' ', '') AS FLOAT)
+                        ELSE 0
+                    END DESC,
+                    ss.price_num ASC
+                 LIMIT 1
+             """
+             cheapest_query = """
+                 SELECT 
+                    ss.id, ss.name, ss.price, ss.capacity, ss.price_per_gb, 
+                    ss.type, ss.cache, ss.form_factor, ss.interface
+                 FROM ssd_specs ss
+                 WHERE ss.price_num > 0
+                 ORDER BY 
+                    CASE
+                        WHEN ss.capacity LIKE '%TB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'TB', ''), ' ', '') AS FLOAT) * 1000
+                        WHEN ss.capacity LIKE '%GB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'GB', ''), ' ', '') AS FLOAT)
+                        ELSE 0
+                    END DESC,
+                    ss.price_num ASC
+                 LIMIT 1
+             """
+
+        # Last resort is always the same: best capacity-to-price ratio overall SSD
+        last_resort_query = """
+             SELECT 
+                ss.id, ss.name, ss.price, ss.capacity, ss.price_per_gb, 
+                ss.type, ss.cache, ss.form_factor, ss.interface
+             FROM ssd_specs ss 
+             WHERE ss.price_num > 0 
+             ORDER BY 
                 CASE
                     WHEN ss.capacity LIKE '%TB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'TB', ''), ' ', '') AS FLOAT) * 1000
                     WHEN ss.capacity LIKE '%GB' THEN CAST(REPLACE(REPLACE(ss.capacity, 'GB', ''), ' ', '') AS FLOAT)
                     ELSE 0
                 END DESC,
                 ss.price_num ASC
+             LIMIT 1
         """
-
-        # --- Define Queries ---
-        if not use_direct_query:
-            base_query = f"""
-                SELECT s.id, s.name, s.price, s.capacity, s.type, s.interface,
-                       ss.price_num /* No rank/score */
-                FROM get_compatible_ssd(%s) s
-                JOIN ssd_specs ss ON s.id = ss.id
-                WHERE ss.price_num <= %s AND ss.price_num > 0
-                {storage_order_by}
-                LIMIT 1
-            """
-            cheapest_query = """
-                SELECT s.id, s.name, s.price, s.capacity, s.type, s.interface,
-                       ss.price_num
-                FROM get_compatible_ssd(%s) s
-                JOIN ssd_specs ss ON s.id = ss.id
-                WHERE ss.price_num > 0
-                ORDER BY ss.price_num ASC
-                LIMIT 1
-            """
-            base_params_template = (motherboard_id, -1) # Budget placeholder
-            cheapest_params_template = (motherboard_id,)
-        else:
-             # Direct queries on ssd_specs
-             base_query = f"""
-                 SELECT ss.id, ss.name, ss.price, ss.capacity, ss.type, ss.interface,
-                        ss.price_num /* No rank/score */
-                 FROM ssd_specs ss
-                 WHERE ss.price_num <= %s AND ss.price_num > 0
-                 /* Optional: Add interface filter based on mobo if possible */
-                 {storage_order_by}
-                 LIMIT 1
-             """
-             cheapest_query = """
-                 SELECT ss.id, ss.name, ss.price, ss.capacity, ss.type, ss.interface,
-                        ss.price_num
-                 FROM ssd_specs ss
-                 WHERE ss.price_num > 0
-                 ORDER BY ss.price_num ASC
-                 LIMIT 1
-             """
-             base_params_template = (-1,) # Budget placeholder
-             cheapest_params_template = ()
-
-        # Last resort is always the same: cheapest overall SSD
-        last_resort_query = """
-             SELECT ss.id, ss.name, ss.price, ss.capacity, ss.type, ss.interface,
-                    ss.price_num /* No rank/score */
-             FROM ssd_specs ss WHERE ss.price_num > 0 ORDER BY ss.price_num ASC LIMIT 1
-        """
-        last_resort_params=()
 
         try:
-             results, description = self._execute_query_with_fallbacks(
-                 base_query=base_query,
-                 cheapest_query=cheapest_query,
-                 last_resort_query=last_resort_query,
-                 base_params_template=base_params_template,
-                 cheapest_params_template=cheapest_params_template,
-                 last_resort_params=last_resort_params,
-                 original_budget=budget,
-                 component_type="Storage"
-             )
-             # Pass description to processing function
-             return self._process_and_store_component(results, description, "storage", budget)
+            # Progressive budget increment strategy
+            current_budget = budget
+            max_attempts = 10  # Try up to 10 budget increments
+            increment_factor = 0.10  # 10% budget increment each try
+            results = None
+            description = None
+            
+            for attempt in range(max_attempts + 1):  # +1 for the initial attempt at original budget
+                logging.info(f"Storage - Attempt {attempt}: trying with budget ${current_budget:.2f}")
+                
+                # Try to find compatible SSD within current budget
+                try:
+                    if not use_direct_query:
+                        # Using compatibility function
+                        self.cursor.execute(base_query, (motherboard_id, current_budget))
+                    else:
+                        # Using direct query
+                        self.cursor.execute(base_query, (current_budget,))
+                    
+                    results = self.cursor.fetchall()
+                    if results:
+                        description = self.cursor.description
+                        logging.info(f"Storage - Found suitable drive within budget on attempt {attempt}")
+                        break
+                except Exception as query_err:
+                    logging.error(f"Storage - Error in query execution: {str(query_err)}")
+                    # Continue to next attempt
+                
+                # If we've tried all increments and still nothing, fallback to cheapest options
+                if attempt == max_attempts:
+                    logging.warning(f"Storage - No suitable drive found after {max_attempts} budget increments. Trying fallback.")
+                    try:
+                        # First try the compatible cheapest query
+                        if not use_direct_query:
+                            self.cursor.execute(cheapest_query, (motherboard_id,))
+                        else:
+                            self.cursor.execute(cheapest_query)
+                            
+                        results = self.cursor.fetchall()
+                        if results:
+                            description = self.cursor.description
+                            logging.info(f"Storage - Found drive with cheapest query fallback")
+                            break
+                            
+                        # If that fails, try absolute last resort
+                        logging.warning(f"Storage - Cheapest query failed. Trying last resort.")
+                        self.cursor.execute(last_resort_query)
+                        results = self.cursor.fetchall()
+                        description = self.cursor.description
+                        
+                        if results:
+                            logging.info(f"Storage - Found drive with last resort query")
+                            break
+                        else:
+                            raise Exception("No storage device found after all fallback attempts")
+                            
+                    except Exception as fallback_err:
+                        logging.error(f"Storage - Fallback queries failed: {fallback_err}")
+                        raise Exception(f"All storage queries failed: {fallback_err}")
+                    
+                    break
+                
+                # Increment budget for next attempt
+                current_budget = current_budget * (1 + increment_factor)
+                logging.info(f"Storage - Increasing budget to ${current_budget:.2f} for attempt {attempt+1}")
+            
+            if not results:
+                raise Exception("No storage device found after all attempts")
+                
+            # Process the selected component
+            # Convert the results to the format expected by _process_and_store_component
+            component_data = dict(zip([d[0] for d in description], results[0]))
+            
+            # Add price_num field if using compatibility function (which returns price as numeric)
+            if not use_direct_query:
+                component_data['price_num'] = float(component_data.get('price', 0))
+                # Ensure price is formatted as string with $ for consistency
+                if isinstance(component_data['price'], (int, float)):
+                    component_data['price'] = f"${component_data['price']:.2f}"
+            
+            logging.info(f"Selected storage: {component_data.get('name')} - {component_data.get('capacity')} - ${component_data.get('price_num', 0):.2f}")
+            
+            # Store in selected_components
+            self.selected_components['storage'] = component_data
+            return component_data
 
         except Exception as e:
-             # Added detailed logging for the tuple index error during execute
-             if isinstance(e, IndexError) and "tuple index out of range" in str(e):
-                  logging.error("Caught 'tuple index out of range' likely during parameter processing in DB driver for Storage.", exc_info=True)
-             elif "WITHIN GROUP" in str(e): # Should be fixed, but double check
-                 logging.error("FATAL DEBUG: The specific 'rank' SQL error occurred in Storage selection. Quoting failed.", exc_info=True)
-             else:
-                 logging.error(f"Error selecting storage: {str(e)}", exc_info=True)
-             raise # Re-raise error
+            logging.error(f"Error selecting storage: {str(e)}", exc_info=True)
+            
+            # Last attempt - try to get ANY storage device
+            try:
+                logging.warning("Storage - Attempting emergency last resort query")
+                self.cursor.execute("SELECT * FROM ssd_specs WHERE price_num > 0 ORDER BY price_num ASC LIMIT 1")
+                results = self.cursor.fetchall()
+                description = self.cursor.description
+                if results:
+                    component_data = dict(zip([d[0] for d in description], results[0]))
+                    self.selected_components['storage'] = component_data
+                    return component_data
+            except Exception as final_err:
+                logging.error(f"Storage - Emergency query also failed: {final_err}")
+                
+            raise # Re-raise original error
 
 
     def build_recommendation(self):

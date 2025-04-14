@@ -89,15 +89,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "TEAMGROUP MS30",
+        "price": "33.99",
+        "price_inr": "\u20b92832.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 512,
+          "interface": "M.2 SATA"
         }
       }
     },
@@ -111,12 +110,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$831.31",
-    "total_cost_inr": "\u20b969275.83",
+    "total_cost_usd": "$855.80",
+    "total_cost_inr": "\u20b971316.67",
     "budget_inr": "\u20b980000.00",
     "budget_usd": "$960.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b910724.17",
+    "remaining_budget_inr": "\u20b98683.33",
     "build_id": "1a",
     "test_config": {
       "test_id": "A",
@@ -214,15 +213,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "TEAMGROUP MS30",
+        "price": "33.99",
+        "price_inr": "\u20b92832.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 512,
+          "interface": "M.2 SATA"
         }
       }
     },
@@ -236,12 +234,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$881.22",
-    "total_cost_inr": "\u20b973435.00",
+    "total_cost_usd": "$905.71",
+    "total_cost_inr": "\u20b975475.83",
     "budget_inr": "\u20b990000.00",
     "budget_usd": "$1080.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b916565.00",
+    "remaining_budget_inr": "\u20b914524.17",
     "build_id": "2a",
     "test_config": {
       "test_id": "A",
@@ -339,15 +337,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JM600",
+        "price": "54.99",
+        "price_inr": "\u20b94582.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1000,
+          "interface": "M.2 SATA"
         }
       }
     },
@@ -361,12 +358,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$956.41",
-    "total_cost_inr": "\u20b979700.83",
+    "total_cost_usd": "$1001.90",
+    "total_cost_inr": "\u20b983491.67",
     "budget_inr": "\u20b9100000.00",
     "budget_usd": "$1200.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b920299.17",
+    "remaining_budget_inr": "\u20b916508.33",
     "build_id": "3a",
     "test_config": {
       "test_id": "A",
@@ -462,15 +459,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Intel 660p",
+        "price": "75.0",
+        "price_inr": "\u20b96250.00",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1020,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -484,12 +480,11 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1256.86",
-    "total_cost_inr": "\u20b9104738.33",
+    "total_cost_usd": "$1322.36",
+    "total_cost_inr": "\u20b9110196.67",
     "budget_inr": "\u20b9110000.00",
     "budget_usd": "$1320.00",
-    "status": "Within budget",
-    "remaining_budget_inr": "\u20b95261.67",
+    "status": "Over budget by \u20b9196.67",
     "build_id": "4a",
     "test_config": {
       "test_id": "A",
@@ -586,15 +581,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JM600",
+        "price": "54.99",
+        "price_inr": "\u20b94582.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1000,
+          "interface": "M.2 SATA"
         }
       }
     },
@@ -608,12 +602,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1208.45",
-    "total_cost_inr": "\u20b9100704.17",
+    "total_cost_usd": "$1253.94",
+    "total_cost_inr": "\u20b9104495.00",
     "budget_inr": "\u20b9120000.00",
     "budget_usd": "$1440.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b919295.83",
+    "remaining_budget_inr": "\u20b915505.00",
     "build_id": "5a",
     "test_config": {
       "test_id": "A",
@@ -711,15 +705,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Intel 660p",
+        "price": "75.0",
+        "price_inr": "\u20b96250.00",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1020,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -733,12 +726,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1344.41",
-    "total_cost_inr": "\u20b9112034.17",
+    "total_cost_usd": "$1409.91",
+    "total_cost_inr": "\u20b9117492.50",
     "budget_inr": "\u20b9130000.00",
     "budget_usd": "$1560.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b917965.83",
+    "remaining_budget_inr": "\u20b912507.50",
     "build_id": "6a",
     "test_config": {
       "test_id": "A",
@@ -836,15 +829,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Intel 660p",
+        "price": "75.0",
+        "price_inr": "\u20b96250.00",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1020,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -858,12 +850,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1295.41",
-    "total_cost_inr": "\u20b9107950.83",
+    "total_cost_usd": "$1360.91",
+    "total_cost_inr": "\u20b9113409.17",
     "budget_inr": "\u20b9140000.00",
     "budget_usd": "$1680.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b932049.17",
+    "remaining_budget_inr": "\u20b926590.83",
     "build_id": "7a",
     "test_config": {
       "test_id": "A",
@@ -960,15 +952,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Intel 660p",
+        "price": "75.0",
+        "price_inr": "\u20b96250.00",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1020,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -982,12 +973,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1631.96",
-    "total_cost_inr": "\u20b9135996.67",
+    "total_cost_usd": "$1697.46",
+    "total_cost_inr": "\u20b9141455.00",
     "budget_inr": "\u20b9150000.00",
     "budget_usd": "$1800.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b914003.33",
+    "remaining_budget_inr": "\u20b98545.00",
     "build_id": "8a",
     "test_config": {
       "test_id": "A",
@@ -1085,15 +1076,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Intel 660p",
+        "price": "75.0",
+        "price_inr": "\u20b96250.00",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 1020,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1107,12 +1097,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1547.60",
-    "total_cost_inr": "\u20b9128966.67",
+    "total_cost_usd": "$1613.10",
+    "total_cost_inr": "\u20b9134425.00",
     "budget_inr": "\u20b9160000.00",
     "budget_usd": "$1920.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b931033.33",
+    "remaining_budget_inr": "\u20b925575.00",
     "build_id": "9a",
     "test_config": {
       "test_id": "A",
@@ -1210,15 +1200,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JPS600",
+        "price": "101.99",
+        "price_inr": "\u20b98499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2000,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1232,12 +1221,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1712.43",
-    "total_cost_inr": "\u20b9142702.50",
+    "total_cost_usd": "$1804.92",
+    "total_cost_inr": "\u20b9150410.00",
     "budget_inr": "\u20b9170000.00",
     "budget_usd": "$2040.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b927297.50",
+    "remaining_budget_inr": "\u20b919590.00",
     "build_id": "10a",
     "test_config": {
       "test_id": "A",
@@ -1335,15 +1324,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JPS600",
+        "price": "101.99",
+        "price_inr": "\u20b98499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2000,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1357,12 +1345,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1712.43",
-    "total_cost_inr": "\u20b9142702.50",
+    "total_cost_usd": "$1804.92",
+    "total_cost_inr": "\u20b9150410.00",
     "budget_inr": "\u20b9180000.00",
     "budget_usd": "$2160.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b937297.50",
+    "remaining_budget_inr": "\u20b929590.00",
     "build_id": "11a",
     "test_config": {
       "test_id": "A",
@@ -1459,15 +1447,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JPS600",
+        "price": "101.99",
+        "price_inr": "\u20b98499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2000,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1481,12 +1468,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1858.43",
-    "total_cost_inr": "\u20b9154869.17",
+    "total_cost_usd": "$1950.92",
+    "total_cost_inr": "\u20b9162576.67",
     "budget_inr": "\u20b9190000.00",
     "budget_usd": "$2280.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b935130.83",
+    "remaining_budget_inr": "\u20b927423.33",
     "build_id": "12a",
     "test_config": {
       "test_id": "A",
@@ -1584,15 +1571,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JPS600",
+        "price": "101.99",
+        "price_inr": "\u20b98499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2000,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1606,12 +1592,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1961.30",
-    "total_cost_inr": "\u20b9163441.67",
+    "total_cost_usd": "$2053.79",
+    "total_cost_inr": "\u20b9171149.17",
     "budget_inr": "\u20b9200000.00",
     "budget_usd": "$2400.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b936558.33",
+    "remaining_budget_inr": "\u20b928850.83",
     "build_id": "13a",
     "test_config": {
       "test_id": "A",
@@ -1709,15 +1695,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Kingston KC3000",
+        "price": "162.99",
+        "price_inr": "\u20b913582.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2048,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -1731,12 +1716,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2155.40",
-    "total_cost_inr": "\u20b9179616.67",
+    "total_cost_usd": "$2308.89",
+    "total_cost_inr": "\u20b9192407.50",
     "budget_inr": "\u20b9210000.00",
     "budget_usd": "$2520.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b930383.33",
+    "remaining_budget_inr": "\u20b917592.50",
     "build_id": "14a",
     "test_config": {
       "test_id": "A",
@@ -1834,15 +1819,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Leven JPS600",
+        "price": "101.99",
+        "price_inr": "\u20b98499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2000,
+          "interface": "M.2 PCIe 3.0 X4"
         }
       }
     },
@@ -1856,12 +1840,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2191.22",
-    "total_cost_inr": "\u20b9182601.67",
+    "total_cost_usd": "$2283.71",
+    "total_cost_inr": "\u20b9190309.17",
     "budget_inr": "\u20b9220000.00",
     "budget_usd": "$2640.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b937398.33",
+    "remaining_budget_inr": "\u20b929690.83",
     "build_id": "15a",
     "test_config": {
       "test_id": "A",
@@ -1958,15 +1942,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -1980,12 +1963,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2029.42",
-    "total_cost_inr": "\u20b9169118.33",
+    "total_cost_usd": "$2229.91",
+    "total_cost_inr": "\u20b9185825.83",
     "budget_inr": "\u20b9230000.00",
     "budget_usd": "$2760.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b960881.67",
+    "remaining_budget_inr": "\u20b944174.17",
     "build_id": "16a",
     "test_config": {
       "test_id": "A",
@@ -2083,15 +2066,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2105,12 +2087,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2226.32",
-    "total_cost_inr": "\u20b9185526.67",
+    "total_cost_usd": "$2426.81",
+    "total_cost_inr": "\u20b9202234.17",
     "budget_inr": "\u20b9240000.00",
     "budget_usd": "$2880.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b954473.33",
+    "remaining_budget_inr": "\u20b937765.83",
     "build_id": "17a",
     "test_config": {
       "test_id": "A",
@@ -2207,15 +2189,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Kingston KC3000",
+        "price": "162.99",
+        "price_inr": "\u20b913582.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2048,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2229,12 +2210,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2567.65",
-    "total_cost_inr": "\u20b9213970.83",
+    "total_cost_usd": "$2721.14",
+    "total_cost_inr": "\u20b9226761.67",
     "budget_inr": "\u20b9250000.00",
     "budget_usd": "$3000.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b936029.17",
+    "remaining_budget_inr": "\u20b923238.33",
     "build_id": "18a",
     "test_config": {
       "test_id": "A",
@@ -2332,15 +2313,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2354,12 +2334,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2637.42",
-    "total_cost_inr": "\u20b9219785.00",
+    "total_cost_usd": "$2837.91",
+    "total_cost_inr": "\u20b9236492.50",
     "budget_inr": "\u20b9260000.00",
     "budget_usd": "$3120.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b940215.00",
+    "remaining_budget_inr": "\u20b923507.50",
     "build_id": "19a",
     "test_config": {
       "test_id": "A",
@@ -2457,15 +2437,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2479,12 +2458,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2672.44",
-    "total_cost_inr": "\u20b9222703.33",
+    "total_cost_usd": "$2872.93",
+    "total_cost_inr": "\u20b9239410.83",
     "budget_inr": "\u20b9270000.00",
     "budget_usd": "$3240.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b947296.67",
+    "remaining_budget_inr": "\u20b930589.17",
     "build_id": "20a",
     "test_config": {
       "test_id": "A",
@@ -2582,15 +2561,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2604,12 +2582,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$1907.31",
-    "total_cost_inr": "\u20b9158942.50",
+    "total_cost_usd": "$2107.80",
+    "total_cost_inr": "\u20b9175650.00",
     "budget_inr": "\u20b9280000.00",
     "budget_usd": "$3360.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b9121057.50",
+    "remaining_budget_inr": "\u20b9104350.00",
     "build_id": "21a",
     "test_config": {
       "test_id": "A",
@@ -2706,15 +2684,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "Kingston KC3000",
+        "price": "162.99",
+        "price_inr": "\u20b913582.50",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 2048,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2728,12 +2705,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2812.82",
-    "total_cost_inr": "\u20b9234401.67",
+    "total_cost_usd": "$2966.31",
+    "total_cost_inr": "\u20b9247192.50",
     "budget_inr": "\u20b9290000.00",
     "budget_usd": "$3480.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b955598.33",
+    "remaining_budget_inr": "\u20b942807.50",
     "build_id": "22a",
     "test_config": {
       "test_id": "A",
@@ -2831,15 +2808,14 @@
         }
       },
       "storage": {
-        "name": "ADATA Ultimate SU650",
-        "price": "9.5",
-        "price_inr": "\u20b9791.67",
+        "name": "PNY CS2241",
+        "price": "209.99",
+        "price_inr": "\u20b917499.17",
         "details": {
+          "form_factor": "M.2-2280",
           "type": "SSD",
-          "capacity": 120,
-          "interface": "M.2 SATA",
-          "rank": 9999,
-          "ml_score": 0
+          "capacity": 4000,
+          "interface": "M.2 PCIe 4.0 X4"
         }
       }
     },
@@ -2853,12 +2829,12 @@
       "psu",
       "storage"
     ],
-    "total_cost_usd": "$2684.78",
-    "total_cost_inr": "\u20b9223731.67",
+    "total_cost_usd": "$2885.27",
+    "total_cost_inr": "\u20b9240439.17",
     "budget_inr": "\u20b9300000.00",
     "budget_usd": "$3600.00",
     "status": "Within budget",
-    "remaining_budget_inr": "\u20b976268.33",
+    "remaining_budget_inr": "\u20b959560.83",
     "build_id": "23a",
     "test_config": {
       "test_id": "A",
