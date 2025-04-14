@@ -3,7 +3,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { ollama, systemPrompt } from "@/lib/ollama";
-import StreamingText from "./StreamingText";
 import ReactMarkdown from "react-markdown";
 
 const BeginnerBuilder = () => {
@@ -12,7 +11,6 @@ const BeginnerBuilder = () => {
   >([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [currentStreamingText, setCurrentStreamingText] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -28,7 +26,7 @@ const BeginnerBuilder = () => {
   // Auto-scroll effect
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, currentStreamingText]);
+  }, [messages]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,26 +36,21 @@ const BeginnerBuilder = () => {
     setInput("");
     setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
     setIsLoading(true);
-    setCurrentStreamingText("");
 
     try {
       const chatMessages = [
         ...messages,
         { role: "user", content: userMessage },
       ];
-      let fullResponse = "";
 
+      // Get response from LLM
       const response = await ollama.chat({
         model: "qwen2.5:14b",
         messages: chatMessages,
-        stream: true,
       });
 
-
-      for await (const part of response) {
-        fullResponse += part.message.content;
-        setCurrentStreamingText(fullResponse);
-      }
+      // Get the full response text
+      const fullResponse = response.message.content;
 
       setMessages((prev) => [
         ...prev,
@@ -70,7 +63,7 @@ const BeginnerBuilder = () => {
         {
           role: "assistant",
           content:
-            "Sorry, I encountered an error. Please make sure Ollama is running locally with the llama3.2 model installed.",
+            "Sorry, I encountered an error. Please make sure Ollama is running locally with the required model installed.",
         },
       ]);
     }
@@ -93,59 +86,53 @@ const BeginnerBuilder = () => {
             } p-4 rounded-lg shadow-md`}
           >
             <div className="prose prose-invert max-w-none">
-              {message.role === "assistant" &&
-              message === displayMessages[displayMessages.length - 1] &&
-              isLoading ? (
-                <StreamingText text={currentStreamingText} />
-              ) : (
-                <ReactMarkdown
-                  components={{
-                    h1: ({ children }) => (
-                      <h1 className="text-2xl font-bold mb-4 text-white">
-                        {children}
-                      </h1>
-                    ),
-                    h2: ({ children }) => (
-                      <h2 className="text-xl font-bold mb-3 text-white">
-                        {children}
-                      </h2>
-                    ),
-                    h3: ({ children }) => (
-                      <h3 className="text-lg font-bold mb-2 text-white">
-                        {children}
-                      </h3>
-                    ),
-                    p: ({ children }) => (
-                      <p className="mb-4 text-gray-200">{children}</p>
-                    ),
-                    ul: ({ children }) => (
-                      <ul className="list-disc ml-6 mb-4 text-gray-200">
-                        {children}
-                      </ul>
-                    ),
-                    ol: ({ children }) => (
-                      <ol className="list-decimal ml-6 mb-4 text-gray-200">
-                        {children}
-                      </ol>
-                    ),
-                    li: ({ children }) => (
-                      <li className="mb-1 text-gray-200">{children}</li>
-                    ),
-                    code: ({ children }) => (
-                      <code className="bg-gray-800 px-1 py-0.5 rounded text-green-400">
-                        {children}
-                      </code>
-                    ),
-                    pre: ({ children }) => (
-                      <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4">
-                        {children}
-                      </pre>
-                    ),
-                  }}
-                >
-                  {message.content}
-                </ReactMarkdown>
-              )}
+              <ReactMarkdown
+                components={{
+                  h1: ({ children }) => (
+                    <h1 className="text-2xl font-bold mb-4 text-white">
+                      {children}
+                    </h1>
+                  ),
+                  h2: ({ children }) => (
+                    <h2 className="text-xl font-bold mb-3 text-white">
+                      {children}
+                    </h2>
+                  ),
+                  h3: ({ children }) => (
+                    <h3 className="text-lg font-bold mb-2 text-white">
+                      {children}
+                    </h3>
+                  ),
+                  p: ({ children }) => (
+                    <p className="mb-4 text-gray-200">{children}</p>
+                  ),
+                  ul: ({ children }) => (
+                    <ul className="list-disc ml-6 mb-4 text-gray-200">
+                      {children}
+                    </ul>
+                  ),
+                  ol: ({ children }) => (
+                    <ol className="list-decimal ml-6 mb-4 text-gray-200">
+                      {children}
+                    </ol>
+                  ),
+                  li: ({ children }) => (
+                    <li className="mb-1 text-gray-200">{children}</li>
+                  ),
+                  code: ({ children }) => (
+                    <code className="bg-gray-800 px-1 py-0.5 rounded text-green-400">
+                      {children}
+                    </code>
+                  ),
+                  pre: ({ children }) => (
+                    <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4">
+                      {children}
+                    </pre>
+                  ),
+                }}
+              >
+                {message.content}
+              </ReactMarkdown>
             </div>
           </div>
         ))}

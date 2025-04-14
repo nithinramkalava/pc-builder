@@ -6,6 +6,7 @@ import numpy as np
 from data_connection import get_sqlalchemy_engine, connect_to_db
 import traceback # Added for detailed error logging
 import logging # Use logging
+import argparse # For command-line arguments
 
 # Assuming logging is configured elsewhere (like in run_evaluation.py)
 # If running this file directly, uncomment the next few lines:
@@ -1329,17 +1330,48 @@ class PCRecommendationSystem:
 # Keep main for direct testing if needed
 def main():
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description='PC Parts Recommendation System')
+    parser.add_argument('--input', type=str, help='Path to input JSON file with user preferences')
+    parser.add_argument('--output', type=str, help='Path to output JSON file for recommendations')
+    args = parser.parse_args()
+    
+    input_file = args.input
+    output_file = args.output
+    
     try:
-        print("\n--- Testing Default Recommendation ---")
-        # Use a specific input file path if needed, or default
-        rec_system_default = PCRecommendationSystem()
-        recommendation_default = rec_system_default.build_recommendation()
-        print(json.dumps(recommendation_default, indent=2))
-        rec_system_default.close()
-
+        print(f"Using input file: {input_file}")
+        
+        # Create recommendation system with specified input file
+        rec_system = PCRecommendationSystem(input_file=input_file) if input_file else PCRecommendationSystem()
+        
+        # Generate recommendation
+        recommendation = rec_system.build_recommendation()
+        
+        # Write to output file if specified
+        if output_file:
+            print(f"Writing recommendation to: {output_file}")
+            with open(output_file, 'w') as f:
+                json.dump(recommendation, f, indent=2)
+        else:
+            # Print to console if no output file
+            print(json.dumps(recommendation, indent=2))
+            
+        rec_system.close()
+        
     except Exception as e:
-        print(f"Error in main execution: {str(e)}")
+        error_message = f"Error in recommendation system: {str(e)}"
+        print(error_message)
         print(traceback.format_exc())
+        
+        # If output file is specified, write error to it
+        if output_file:
+            with open(output_file, 'w') as f:
+                json.dump({"error": error_message}, f)
+        
+        # Exit with error code
+        exit(1)
 
 if __name__ == "__main__":
     main()

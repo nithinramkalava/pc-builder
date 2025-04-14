@@ -21,7 +21,7 @@ export default function Home() {
         </Link>
 
         <Link 
-          href="/beginner"
+          href="/recommend"
           className="p-8 border border-gray-600 rounded-lg text-center space-y-4 bg-transparent text-white hover:bg-white hover:text-gray-900 transition-all duration-200"
         >
           <h2 className="text-2xl font-bold">Beginner Builder</h2>

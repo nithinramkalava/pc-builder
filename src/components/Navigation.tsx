@@ -11,13 +11,14 @@ const Navigation = () => {
         <div className="space-x-4">
           <Link href="/skilled" className="text-white hover:text-gray-300">
             Skilled Builder
-          </Link>
-          <Link href="/beginner" className="text-white hover:text-gray-300">
+            </Link>
+          <Link href="/recommend" className="text-white hover:text-gray-300">
             Beginner Builder
           </Link>
-          <Link href="/recommend" className="text-white hover:text-gray-300">
-             Recomendation
+          <Link href="/beginner" className="text-white hover:text-gray-300">
+            LLM Recomendation
           </Link>
+
         </div>
       </div>
     </nav>

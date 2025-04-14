@@ -340,30 +340,57 @@ const SkilledBuilder = () => {
 
       {isComplete ? (
         <div className="space-y-4 mt-4">
-          {Object.entries(selectedParts).map(([type, part]) => (
-            <div
-              key={type}
-              className="flex justify-between items-center bg-gray-100 p-4 rounded text-black shadow-sm"
-            >
-              <span className="font-medium capitalize">
-                {formatStageLabel(type)}
-              </span>
-              <div className="text-right">
-                <div>{part?.name}</div>
-                {type === "storage" && part?.capacity && (
-                  <div>{formatCapacity(part.capacity)}</div>
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg overflow-hidden border border-gray-700">
+            <div className="mb-6 text-center">
+              <h2 className="text-3xl font-bold mb-2 text-white">
+                Your Custom PC Build
+              </h2>
+              <p className="text-gray-300 mb-6">
+                Here&apos;s your complete PC build with all selected components
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {Object.entries(selectedParts).map(([type, part]) => (
+                <div
+                  key={type}
+                  className="bg-gray-950 bg-opacity-40 p-4 rounded-lg transition-all hover:bg-opacity-60 border border-gray-800"
+                >
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div className="md:w-1/4 mb-2 md:mb-0">
+                      <h3 className="font-semibold text-gray-300 capitalize">
+                        {formatStageLabel(type)}
+                      </h3>
+                    </div>
+                    <div className="md:w-3/4">
+                      <div className="font-semibold text-white text-lg mb-1">
+                        {part?.name}
+                      </div>
+                      {type === "storage" && part?.capacity && (
+                        <div className="text-gray-400">
+                          {formatCapacity(part.capacity)}
+                        </div>
+                      )}
+                      <div className="text-blue-300">
+                        {formatPrice(part?.price)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex justify-between items-center p-4 bg-gray-950 bg-opacity-60 rounded-lg border border-gray-800">
+              <span className="text-gray-300 font-medium">Total Cost:</span>
+              <div className="text-xl font-bold text-white">
+                ₹{totalText}
+                {hasMissingPrice && (
+                  <span className="text-sm font-normal ml-2 text-gray-500">
+                    (Some parts missing price data)
+                  </span>
                 )}
-                <div>{formatPrice(part?.price)}</div>
               </div>
             </div>
-          ))}
-          <div className="text-xl font-bold text-right">
-            Total: ₹{totalText}
-            {hasMissingPrice && (
-              <span className="text-sm font-normal ml-2 text-gray-600">
-                (Some parts missing price data)
-              </span>
-            )}
           </div>
         </div>
       ) : (
